@@ -19,7 +19,7 @@
 			control=gametitlelabel
 			region=header
 			dir=right
-			align=top-center
+			align=left-center
 		}
 
 		place { control=iconimage height=0 width=0 }

@@ -4,6 +4,7 @@ fonts.styles {
     basefont		"Roboto"
     condensed		"Roboto Condensed"
     medium			"Roboto Medium"
+    titlefont   "Bedas Neue"
   }
 
   colors [$OSX] {
@@ -82,8 +83,8 @@ fonts.styles {
   //-------------------------------------------------------------------------------------------------------------------------------//
 
   Panel {
-    font-family=basefont font-size=16 font-weight=400 textcolor=A2TextPrimary font-style=regular
-    selectedtextcolor=A2TextPrimary
+    font-family=basefont font-size=16 font-weight=500 textcolor=A2TextPrimary font-style=regular
+    selectedtextcolor=A2TextFocus
   }
 
   nameInstanceStyle
@@ -125,7 +126,7 @@ fonts.styles {
     //group chat mini-friends list section header
 
   ListPanelSectionHeader
-    { font-family=basefont font-size=16 font-weight=400 textcolor=A2TextLabel font-style=regular }
+    { font-family=basefont font-size=16 font-weight=500 textcolor=A2TextLabel font-style=regular }
 
   SectionHeaderStyleLabel
     { font-family=basefont font-size=16 font-weight=400 textcolor=A2TextLabel font-style=regular }
@@ -276,7 +277,7 @@ fonts.styles {
 //Buttons
 
   Button
-    { font-family=basefont font-size=16 font-weight=700 textcolor=A2TextFocus font-style=uppercase }
+    { font-family=basefont font-size=16 font-weight=700 textcolor=A2TextFocus font-style=regular }
 
   Button:disabled
     { textcolor=A2TextHint }
@@ -412,43 +413,43 @@ fonts.styles {
 //Details
 
   headertextlarge
-    { font-family=condensed font-size=50 font-weight=700 textcolor=A2TextWhite font-style=uppercase }
+    { font-family=condensed font-size=54 font-weight=700 textcolor=A2TextWhite font-style=titlefont }
 
   "CGamesPage_Details headertext"
-    { font-family=medium font-size=18 font-weight=500 textcolor=A2TextWhite font-style=regular }
+    { font-family=medium font-size=24 font-weight=500 textcolor=A2TextWhite font-style=regular }
 
   "CGamesPage_Details headertext-red"
-    { font-family=medium font-size=18 font-weight=500 textcolor=A2TextWhite font-style=regular }
+    { font-family=medium font-size=24 font-weight=500 textcolor=A2TextWhite font-style=regular }
 
   "CGamesPage_Details headertext-green"
-    { font-family=medium font-size=18 font-weight=500 textcolor=A2TextWhite font-style=regular }
+    { font-family=medium font-size=24 font-weight=500 textcolor=A2TextWhite font-style=regular }
 
   "CGamesPage_Details headertext-blue"
-    { font-family=medium font-size=18 font-weight=500 textcolor=A2TextWhite font-style=regular }
+    { font-family=medium font-size=24 font-weight=500 textcolor=A2TextWhite font-style=regular }
 
   valuetext
-    { font-family=basefont font-size=16 font-weight=500 textcolor=A2TextWhite font-style=regular }
+    { font-family=basefont font-size=24 font-weight=500 textcolor=A2TextWhite font-style=regular }
 
   rightcolumnlink
-    { font-family=basefont font-size=16 font-weight=400 textcolor=A2TextOnFocus font-style=regular }
+    { font-family=basefont font-size=16 font-weight=500 textcolor=A2TextOnFocus font-style=regular }
 
   rightcolumnlink:hover
     { textcolor=A2TextOnFocusHover }
 
   rightcolumntag
-    { font-family=basefont font-size=16 font-weight=400 textcolor=A2TextOnFocus font-style=regular }
+    { font-family=basefont font-size=16 font-weight=500 textcolor=A2TextOnFocus font-style=regular }
 
   gamedetails-headerlabel
-    { font-family=condensed font-size=40 font-weight=700 textcolor=A2TextFocus font-style=uppercase }
+    { font-family=condensed font-size=40 font-weight=700 textcolor=A2TextFocus font-style=regular }
 
   gamedetails-headerlabel-red
-    { font-family=condensed font-size=40 font-weight=700 textcolor=A2TextFocus font-style=uppercase }
+    { font-family=condensed font-size=40 font-weight=700 textcolor=A2TextFocus font-style=regular }
 
   gamedetails-headerlabel-green
-    { font-family=condensed font-size=40 font-weight=700 textcolor=A2TextFocus font-style=uppercase }
+    { font-family=condensed font-size=40 font-weight=700 textcolor=A2TextFocus font-style=regular }
 
   gamedetails-headerlabel-blue
-    { font-family=condensed font-size=40 font-weight=700 textcolor=A2TextFocus font-style=uppercase }
+    { font-family=condensed font-size=40 font-weight=700 textcolor=A2TextFocus font-style=regular }
 
   workshop_description
     { font-family=medium font-size=18 font-weight=500 textcolor=A2TextPrimary font-style=regular }
@@ -557,7 +558,7 @@ fonts.styles {
 //Main Client
 
   CUINavButton
-    { font-family=condensed font-size=22 font-weight=400 textcolor=A2TextOnFocus font-style=regular }
+    { font-family=condensed font-size=22 font-weight=500 textcolor=A2TextOnFocus font-style=regular }
 
   CUINavButton:selected
     { textcolor=A2TextOnFocusHover }
@@ -573,13 +574,13 @@ fonts.styles {
     { textcolor=A2TextOnFocusHover }
 
   LibrarySearch {
-    font-family=condensed font-size=22 font-weight=400 textcolor=A2TextOnFocus font-style=regular
+    font-family=condensed font-size=22 font-weight=500 textcolor=A2TextOnFocus font-style=regular
     shadowtextcolor=A2TextOnFocus //cursor color
     selectedbgcolor=Focus2
   }
 
   FriendsSearch {
-    font-family=condensed font-size=22 font-weight=400 textcolor=A2TextOnFocus font-style=regular
+    font-family=condensed font-size=22 font-weight=500 textcolor=A2TextOnFocus font-style=regular
     shadowtextcolor=A2TextOnFocus //cursor color
     selectedbgcolor=Focus2
   }

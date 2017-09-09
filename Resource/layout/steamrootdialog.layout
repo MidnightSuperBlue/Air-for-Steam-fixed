@@ -101,11 +101,11 @@ resource/layout/steamrootdialog.layout {
       place { control=account_balance region=header align=right y=11 height=30 margin-right=24 end-right=InboxButton }
       place {
         control=online_friends region=header align=right y=11 margin-right=34 end-right=account_balance
-        height=0
+        height=30
       }
       place {
         control=view_friends region=header align=right y=11 width=60 margin-right=34 end-right=account_balance
-        height=0
+        height=30
       }
 
     place { control=UINavigatorPanel width=max height=max }
