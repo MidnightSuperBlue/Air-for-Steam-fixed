@@ -1,10 +1,10 @@
 fonts.styles {
 
   colors [$WINDOWS||$LINUX] {
-    basefont		"Roboto"
+    basefont		"Roboto Regular"
     condensed		"Roboto Condensed"
     medium			"Roboto Medium"
-    titlefont   "Bedas Neue"
+    titlefont   "Roboto Regular"
   }
 
   colors [$OSX] {
@@ -413,7 +413,7 @@ fonts.styles {
 //Details
 
   headertextlarge
-    { font-family=condensed font-size=54 font-weight=700 textcolor=A2TextWhite font-style=titlefont }
+    { font-family=titlefont font-size=54 font-weight=700 textcolor=A2TextWhite font-style=regular }
 
   "CGamesPage_Details headertext"
     { font-family=medium font-size=24 font-weight=500 textcolor=A2TextWhite font-style=regular }

@@ -12,6 +12,10 @@ This [handy-dandy FAQ](https://github.com/Elundris/Air-for-Steam/wiki) should an
 
 --
 
+#### Font
+
+Download the Roboto font here: [Releases · google/roboto](https://github.com/google/roboto/releases)
+
 #### Issues
 
 When reporting an [issue](https://github.com/Elundris/Air-for-Steam/issues), please first read through the current topics to make sure that your issue hasn't already been reported.
