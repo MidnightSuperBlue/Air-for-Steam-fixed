@@ -1,10 +1,10 @@
 fonts.styles {
 
   colors [$WINDOWS||$LINUX] {
-    basefont		"Roboto Regular"
-    condensed		"Roboto Condensed"
-    medium			"Roboto Medium"
-    titlefont   "Roboto Regular"
+    basefont		"Microsoft Yahei"
+    condensed		"Microsoft Yahei"
+    medium			"Microsoft Yahei"
+    titlefont   	"Microsoft Yahei"
   }
 
   colors [$OSX] {
