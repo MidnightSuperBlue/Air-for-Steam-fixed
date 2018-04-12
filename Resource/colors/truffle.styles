@@ -1,22 +1,22 @@
 resource/colors/truffle.styles {
 
-  colors {
-    Focus="68 59 54 255"
-      //
+	colors {
+		Focus="68 59 54 255"
+			//
 
-    Focus2="96 96 90 255"
-      //lighter hue (+28 +37 +36)
+		Focus2="96 96 90 255"
+			//lighter hue (+28 +37 +36)
 
-    Focus3="59 51 46 255"
-      //darker hue (-5% brightness)
+		Focus3="59 51 46 255"
+			//darker hue (-5% brightness)
 
-    Focus4="59 51 46 150"
-      //Focus3 transparent for details box
+		Focus4="59 51 46 150"
+			//Focus3 transparent for details box
 
-    A2TextFocus="Focus"
-      //
+		A2TextFocus="133 114 105 255"
+			//+25% brightness focus
 
-    A2TextFocusHover="Focus2"
-      //
-  }
+		A2TextFocusHover="161 161 151 255"
+			//+25% brightness focus2
+	}
 }
