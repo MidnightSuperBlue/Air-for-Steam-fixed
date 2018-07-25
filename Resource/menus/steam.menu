@@ -5,13 +5,6 @@
 
 		Friends								{ text="#steam_menu_view_friends"					shellcmd="steam://open/friends" }
 		Divider								{ }
-		Online								{	text="#friends_online"									shellcmd="steam://friends/status/online"		checkable=1 }
-		Away									{	text="#friends_away"										shellcmd="steam://friends/status/away"			checkable=1 }
-		Play									{	text="#friends_lookingtoplay"						shellcmd="steam://friends/status/play"			checkable=1 }
-		Trade									{	text="#friends_lookingtotrade"					shellcmd="steam://friends/status/trade"			checkable=1 }
-		Busy									{	text="#friends_busy"										shellcmd="steam://friends/status/busy"			checkable=1 }
-		Offline								{	text="#friends_offline"									shellcmd="steam://friends/status/offline"		checkable=1 }
-		Divider								{ }
 		GamesDetails					{ text="#steam_menu_games_details"				shellcmd="steam://nav/games/details" }
 		GamesList							{ text="#steam_menu_games_list"						shellcmd="steam://nav/games/list" }
 		GamesGrid							{ text="#steam_menu_games_grid"						shellcmd="steam://nav/games/grid" }
@@ -34,9 +27,9 @@
 		Restart								{ text="#steam_mustrestart_button"				command="RestartSteam" }
 		ChangeUser						{ text="#steam_menu_changeuser"						command="ChangeUser" }
 		GoOnline							{ text="#steamui_offlinemode_goonline"		command="goonline" }
-		Divider								{ } //if this divider isn't here, the next one doesn't show in offline mode
 		GoOffline							{ text="#steamui_offlinemode_gooffline"		command="gooffline" }
 		Divider								{ }
+		SystemInfo						{ text="#steam_menu_systeminfo"						command="SystemInfo" }
 		Settings							{ text="#steam_menu_settings"							command="Settings" }
 		Exit									{ text="#steam_exitsteam"									command="Exit" }
 	}
@@ -47,6 +40,7 @@
 		ChangeUser						{	text="#steam_menu_changeuser"						command="ChangeUser" }
 		GoOnline							{	text="#SteamUI_OfflineMode_GoOnline"		command="goonline" }
 		GoOffline							{	text="#SteamUI_OfflineMode_GoOffline"		command="gooffline" }
+		SystemInfo							{ text="#steam_menu_systeminfo"						command="SystemInfo" }
 		Divider								{ }
 		BackupGames						{	text="#steam_menu_backupgames"					command="backupgames" }
 	}
@@ -80,9 +74,13 @@
 		Divider								{ }
 		Online								{ text="#friends_online"									shellcmd="steam://friends/status/online"		checkable=1 }
 		Away									{ text="#friends_away"										shellcmd="steam://friends/status/away"			checkable=1 }
-		Play									{ text="#friends_lookingtoplay"						shellcmd="steam://friends/status/play"			checkable=1 }
-		Trade									{ text="#friends_lookingtotrade"					shellcmd="steam://friends/status/trade"			checkable=1 }
+		Play									{ text="#friends_lookingtoplay"						shellcmd="steam://friends/status/play"			
+		checkable=1 }
+		Trade									{ text="#friends_lookingtotrade"					shellcmd="steam://friends/status/trade"			
+		checkable=1 }
 		Busy									{ text="#friends_busy"										shellcmd="steam://friends/status/busy"			checkable=1 }
+		Invisible							{ text="#friends_invisible"								shellcmd="steam://friends/status/invisible"
+		checkable=1 }
 		Offline								{ text="#friends_offline"									shellcmd="steam://friends/status/offline"		checkable=1 }
 		Divider								{ }
 		SortByName						{ text="#steam_menu_friends_sortbyname"		shellcmd="steam://friends/settings/sortbyname"	checkable=1 }

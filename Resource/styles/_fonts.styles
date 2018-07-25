@@ -606,6 +606,23 @@ fonts.styles {
   MenuItem:disabled
     { textcolor=A2TextHint }
 
+  account_menu_button	{
+    font-family=medium font-size=16 font-weight=500 textcolor=A2TextNotification font-style=regular
+    render_bg { } //reset for button
+    padding=0
+    minimum-height=0
+  }
+
+  account_menu_button:hover
+    { textcolor=A2TextFocus }
+
+  account_menu_label
+    { font-family=medium font-size=16 font-weight=500 textcolor=Friends.OnlineColor font-style=regular }
+
+  account_menu_label:hover
+    { textcolor=A2TextNotification }
+
+
   //-------------------------------------------------------------------------------------------------------------------------------//
   //-------------------------------------------------------------------------------------------------------------------------------//
 

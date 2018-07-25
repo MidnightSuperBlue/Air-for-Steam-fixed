@@ -1,0 +1,41 @@
+resource/layout/accountbutton.layout {
+
+	styles {
+		AccountPersonaStyleOffline { }
+		AccountPersonaStyleOnline { }
+		AccountPersonaStyleInGame { }
+
+		AccountDropDownStyleOffline { }
+		AccountDropDownStyleOnline { }
+		AccountDropDownStyleInGame { }
+
+
+		AccountButtonStyle {
+			render_bg { }
+		}
+
+		AccountButtonStyle:hover {
+			render_bg {
+				0="fill( x0, y0 + 1, x1, y1 - 6, AD25 )"
+			}
+		}
+
+		AccountBalanceStyle {
+			padding-left=14
+			padding-right=14
+			padding-bottom=3
+		}
+
+		AccountMenuButtonStyle {
+			render_bg { }
+		}
+	}
+
+	layout
+	{
+		place { control=account_menu_button height=max width=max } // span over everything
+		place { control=account_balance height=max width=max }
+
+		place { control=account_persona,account_avatar,account_drop_down height=0 width=0 }
+	}
+}

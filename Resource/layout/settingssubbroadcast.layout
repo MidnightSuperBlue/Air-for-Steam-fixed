@@ -11,7 +11,7 @@
 	}
 
 	layout {
-		place { control=BroadcastDisabledLabel,BroadcastDisabledSupportURL 		width=max dir=right spacing=4 }
+		place { control=BroadcastDisabledLabel,BroadcastDisabledSupportURL 		width=max dir=down spacing=4 }
 
 		place { control=BroadcastStatusHeader 																start=BroadcastDisabledLabel dir=down }
 		place { control=BroadcastStatus 																			start=BroadcastStatusHeader dir=right x=4 }
