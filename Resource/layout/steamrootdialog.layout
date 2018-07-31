@@ -13,7 +13,13 @@ resource/layout/steamrootdialog.layout {
       textcolor=none
     }
 
-    view_friends { textcolor=none }
+    view_friends { 
+      ControlName=Button
+      labelText="#Steam_ViewFriends"
+      command="ViewFriends"
+      style="view_friends"
+      textAlignment=east
+    }
 
     support_alert {
       padding-left=50
@@ -99,13 +105,14 @@ resource/layout/steamrootdialog.layout {
       place [!$OSX] { control=AccountButton region=header align=right y=7 height=41 width=36 margin-right=118 }
       place [$OSX] { control=AccountButton region=header align=right y=7 height=41 width=36 margin-right=20 }
       place { control=InboxButton region=header align=right y=7 height=50 width=36 margin-right=4 end-right=AccountButton }
+      place { control=view_friends region=header align=right y= 0 height=41 width=96 margin-right=48 end-right=InboxButton}
 
     place { control=UINavigatorPanel width=max height=max }
 
     region { name=downloads align=bottom height=80 width=max }
       place { control=UIStatusPanel region=downloads align=right height=74 width=74 margin-right=23 }
 
-    place { control=view_friends,online_friends,startvr,exitvr,SupportAlert,fullscreen,New,add_game,ImageLogo,BigPictureBG,FriendPanel,account_balance,account_balance_seperator,account_URL,universe_label height=0 width=0 margin-left=-9999 }
+    place { control=online_friends,startvr,exitvr,SupportAlert,fullscreen,New,add_game,ImageLogo,BigPictureBG,FriendPanel,account_balance,account_balance_seperator,account_URL,universe_label height=0 width=0 margin-left=-9999 }
 
     //needs the margin-left to actually remove the announcement web panel from sight
     place { control=AnnouncementButton height=0 width=0 margin-left=-9999 }
