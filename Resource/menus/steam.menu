@@ -4,6 +4,9 @@
 		text="#steam_menu_file"
 
 		Friends								{ text="#steam_menu_view_friends"					shellcmd="steam://open/friends" }
+		Online								{	text="#friends_online"									shellcmd="steam://friends/status/online"	checkable=1		autocheck=0 }
+		Away									{	text="#friends_away"										shellcmd="steam://friends/status/away"	checkable=1		autocheck=0 }
+		Invisible							{	text="#friends_invisible"								shellcmd="steam://friends/status/invisible"	checkable=1		autocheck=0 }
 		Divider								{ }
 		GamesDetails					{ text="#steam_menu_games_details"				shellcmd="steam://nav/games/details" }
 		GamesList							{ text="#steam_menu_games_list"						shellcmd="steam://nav/games/list" }
@@ -24,10 +27,10 @@
 		RedeemWalletVoucher		{	text="#steam_redeemwalletvoucher"				shellcmd="steam://url/RedeemWalletVoucher" }
 		CheckForUpdates				{	text="#steam_menu_checkforupdates"			command="CheckForUpdates" }
 		Divider								{ }
-		Restart								{ text="#steam_mustrestart_button"				command="RestartSteam" }
-		ChangeUser						{ text="#steam_menu_changeuser"						command="ChangeUser" }
 		GoOnline							{ text="#steamui_offlinemode_goonline"		command="goonline" }
 		GoOffline							{ text="#steamui_offlinemode_gooffline"		command="gooffline" }
+		ChangeUser						{ text="#steam_menu_changeuser"						command="ChangeUser" }
+		Restart								{ text="#steam_mustrestart_button"				command="RestartSteam" }
 		Divider								{ }
 		SystemInfo						{ text="#steam_menu_systeminfo"						command="SystemInfo" }
 		Settings							{ text="#steam_menu_settings"							command="Settings" }
@@ -72,16 +75,9 @@
 		Divider								{ }
 		AddFriend							{ text="#steam_menu_add_friend"						shellcmd="steam://friends/add" }
 		Divider								{ }
-		Online								{ text="#friends_online"									shellcmd="steam://friends/status/online"		checkable=1 }
-		Away									{ text="#friends_away"										shellcmd="steam://friends/status/away"			checkable=1 }
-		Play									{ text="#friends_lookingtoplay"						shellcmd="steam://friends/status/play"			
-		checkable=1 }
-		Trade									{ text="#friends_lookingtotrade"					shellcmd="steam://friends/status/trade"			
-		checkable=1 }
-		Busy									{ text="#friends_busy"										shellcmd="steam://friends/status/busy"			checkable=1 }
-		Invisible							{ text="#friends_invisible"								shellcmd="steam://friends/status/invisible"
-		checkable=1 }
-		Offline								{ text="#friends_offline"									shellcmd="steam://friends/status/offline"		checkable=1 }
+		Online								{ text="#friends_online"									shellcmd="steam://friends/status/online"	checkable=1 autocheck=0}
+		Away									{ text="#friends_away"										shellcmd="steam://friends/status/away"	checkable=1	autocheck=0}
+		Invisible							{ text="#friends_invisible"								shellcmd="steam://friends/status/invisible"	checkable=1	autocheck=0}
 		Divider								{ }
 		SortByName						{ text="#steam_menu_friends_sortbyname"		shellcmd="steam://friends/settings/sortbyname"	checkable=1 }
 		ShowAvatars						{ text="#steam_menu_friends_showavatars"	shellcmd="steam://friends/settings/showavatars"	checkable=1 }

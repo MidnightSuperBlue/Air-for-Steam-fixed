@@ -13,13 +13,7 @@ resource/layout/steamrootdialog.layout {
       textcolor=none
     }
 
-    view_friends { 
-      ControlName=Button
-      labelText="#Steam_ViewFriends"
-      command="ViewFriends"
-      style="view_friends"
-      textAlignment=east
-    }
+    view_friends { textcolor=none }
 
     support_alert {
       padding-left=50
@@ -49,7 +43,7 @@ resource/layout/steamrootdialog.layout {
     inbox_button_active {
       textcolor=none
       render_bg {
-        0="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox_active )"
+        0="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox_active_hover )"
       }
     }
 
@@ -102,16 +96,18 @@ resource/layout/steamrootdialog.layout {
       place [!$OSX] { control=MenuBar align=top width=52 height=49 }
 
       place { control=ParentalLockButton region=header align=right height=30 width=30 align=right }
-      place [!$OSX] { control=InboxButton region=header align=right y=7 height=50 width=36 margin-right=122 }
-      place [$OSX] { control=InboxButton region=header align=right y=7 height=50 width=36 margin-right=20 }
-      place { control=AccountButton region=header align=right y=7 height=41 width=96 margin-right=24 end-right=InboxButton }
-      place { control=view_friends region=header align=right y= 0 height=41 width=96 margin-right=24 end-right=AccountButton}
+      place [!$OSX] { control=AccountButton region=header align=right y=7 height=41 width=36 margin-right=118 }
+      place [$OSX] { control=AccountButton region=header align=right y=7 height=41 width=36 margin-right=20 }
+      place { control=InboxButton region=header align=right y=7 height=50 width=36 margin-right=4 end-right=AccountButton }
 
     place { control=UINavigatorPanel width=max height=max }
 
     region { name=downloads align=bottom height=80 width=max }
       place { control=UIStatusPanel region=downloads align=right height=74 width=74 margin-right=23 }
 
-    place { control=AnnouncementButton,online_friends,startvr,exitvr,SupportAlert,fullscreen,New,add_game,ImageLogo,BigPictureBG,FriendPanel,account_balance,account_balance_seperator,account_URL,universe_label height=0 width=0 }
+    place { control=view_friends,online_friends,startvr,exitvr,SupportAlert,fullscreen,New,add_game,ImageLogo,BigPictureBG,FriendPanel,account_balance,account_balance_seperator,account_URL,universe_label height=0 width=0 margin-left=-9999 }
+
+    //needs the margin-left to actually remove the announcement web panel from sight
+    place { control=AnnouncementButton height=0 width=0 margin-left=-9999 }
   }
 }

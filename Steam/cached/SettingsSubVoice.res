@@ -1,7 +1,5 @@
-"steam/cached/SettingsSubVoice.res"
-{
+steam/cached/SettingsSubVoice.res {
 	layout {
-
 		place { control=DeviceName													width=max margin-top=-7 }
 		place { control=ChangeDeviceButton									dir=down start=DeviceName y=20 }
 		place { control=ReinitAudio													dir=right start=ChangeDeviceButton margin-left=10 }
@@ -17,10 +15,10 @@
 
 		place { control=WhenActiveLabel											dir=down start=TestMicrophone y=30 }
 		place {
-			control=TransmitMethodRadioButton1,TransmitMethodRadioButton2
+			control=TransmitMethodRadioButton1,TransmitMethodRadioButton2,TransmitMethodRadioButton3
 			dir=down start=WhenActiveLabel y=5
 		}
-		place { control=PushToTalkKeyEntry									dir=down width=max start=TransmitMethodRadioButton2 y=10 }
+		place { control=PushToTalkKeyEntry									dir=down width=max start=TransmitMethodRadioButton3 y=10 }
 
 		place { control=Divider2,Divider1,Label1,RepairAudio height=0 width=0 }
 	}
