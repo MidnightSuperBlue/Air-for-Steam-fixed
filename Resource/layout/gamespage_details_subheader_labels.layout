@@ -7,15 +7,15 @@
 			}
 		}
 
-		headertext { padding-bottom=2 padding-top=2 }
+		headertext { padding-left=5 padding-bottom=2 padding-top=2 }
 
-		headertext-red { padding-bottom=2 padding-top=2 }
+		headertext-red { padding-left=5 padding-bottom=2 padding-top=2 }
 
-		headertext-green { padding-bottom=2 padding-top=2 }
+		headertext-green { padding-left=5 padding-bottom=2 padding-top=2 }
 
-		headertext-blue { padding-bottom=2 padding-top=2 }
+		headertext-blue { padding-left=5 padding-bottom=2 padding-top=2 }
 
-		valuetext { padding-bottom=2 padding-top=3 }
+		valuetext { padding-bottom=2 padding-top=2 }
 	}
 
 	layout { }

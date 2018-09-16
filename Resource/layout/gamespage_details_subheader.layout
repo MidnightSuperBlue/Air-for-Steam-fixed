@@ -13,23 +13,24 @@
 			minimum-height=0 //reset for button height
 			inset-left=999 //remove default dropdown arrow
 			render_bg {
-				0="image( x0 + 3, y0 + 3, x1, y1, graphics/onfocus/game_cast )"
+				0="image( x0, y0, x1, y1, graphics/onfocus/game_cast )"
 			}
 		}
 
 		ClientListButton:hover {
 			image=graphics/none
 			render_bg {
-				0="image( x0 + 3, y0 + 3, x1, y1, graphics/onfocus/game_cast_hover )"
+				0="image( x0, y0, x1, y1, graphics/onfocus/game_cast_hover )"
 			}
 		}
 
 		DetailsLaunchButton {
-			padding-left=30 padding-right=30 padding-top=10 padding-bottom=10
-			bgcolor=A2DetailsButton
+			padding-left=0 padding-right=0 padding-top=0 padding-bottom=0
+			font-size=32
+			bgcolor=none
 		}
 
-		DetailsLaunchButton:hover { bgcolor=A2DetailsButtonHover }
+		DetailsLaunchButton:hover { bgcolor=none }
 
 		DetailsLaunchButton:active {
 			render_bg {
@@ -41,11 +42,12 @@
 		}
 
 		DetailsInstallButton {
-			padding-left=30 padding-right=30 padding-top=10 padding-bottom=10
-			bgcolor=A2DetailsButton
+			padding-left=0 padding-right=0 padding-top=0 padding-bottom=0
+			font-size=32
+			bgcolor=none
 		}
 
-		DetailsInstallButton:hover { bgcolor=A2DetailsButtonHover }
+		DetailsInstallButton:hover { bgcolor=none }
 
 		DetailsInstallButton:active {
 			render_bg {
@@ -57,11 +59,12 @@
 		}
 
 		DetailsBuyButton {
-			padding-left=30 padding-right=30 padding-top=10 padding-bottom=10
-			bgcolor=A2DetailsButton
+			padding-left=0 padding-right=0 padding-top=0 padding-bottom=0
+			bgcolor=none
+			font-size=32
 		}
 
-		DetailsBuyButton:hover { bgcolor=A2DetailsButtonHover }
+		DetailsBuyButton:hover { bgcolor=none }
 
 		DetailsBuyButton:active {
 			render_bg {
@@ -81,15 +84,15 @@
 			control=subheaderlabels
 			region=header
 			dir=down
-			align=top-center
-			y=20
+			align=left-center
+			y=10
 		}
 
 		place {
 			control=clientlist //in-home streaming button
 			start=subheaderlabels
 			region=header
-			align=top-center
+			align=left-center
 			dir=down
 			height=30 width=30
 			y=4
@@ -99,10 +102,10 @@
 			control=launchbutton
 			start=subheaderlabels
 			region=header
-			align=top-center
+			align=left-center
 			dir=down
 			//height=70 width=70
-			y=40
+			y=6
 		}
 	}
 }

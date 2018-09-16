@@ -7,7 +7,13 @@
 
 		ClientTitle:FrameFocus { textcolor=none }
 
-		view_friends { textcolor=none }
+		view_friends { 
+	      ControlName=Button
+	      labelText="#Steam_ViewFriends"
+	      command="ViewFriends"
+	      style="view_friends"
+	      textAlignment=east
+    	}
 
 		support_alert {
 			padding-left=50
@@ -93,12 +99,13 @@
 			place [$OSX] { control=AccountButton region=header align=right y=7 height=41 width=36 margin-right=20 }
 			place { control=InboxButton region=header align=right y=7 height=50 width=36 margin-right=4 end-right=AccountButton }
 			place { control=UIStatusPanel region=header align=right y=7 height=50 width=36 margin-right=4 end-right=InboxButton }
+			place { control=view_friends region=header align=right y= 0 height=41 width=96 margin-right=48 end-right=UIStatusPanel}
 
 		place { control=UINavigatorPanel width=max height=max }
 
 		place {
-			control=view_friends,online_friends,startvr,exitvr,SupportAlert,fullscreen,New,add_game,ImageLogo,BigPictureBG,FriendPanel,account_balance,account_balance_seperator,account_URL,universe_label
-			height=0
+			control=online_friends,startvr,exitvr,SupportAlert,fullscreen,New,add_game,ImageLogo,BigPictureBG,FriendPanel,account_balance,account_balance_seperator,account_URL,universe_label
+			height=30
 			width=0
 			margin-left=-9999
 		}
