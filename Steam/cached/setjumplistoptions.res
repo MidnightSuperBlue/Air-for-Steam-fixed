@@ -9,7 +9,7 @@ steam/cached/SetJumplistOptions.res {
 		region { name=box height=max width=max region=body margin-left=26 margin-right=26 }
 			place { control=Label1 region=box width=max }
 			place {
-				control=ShowOnlineStatus,ShowAwayStatus,ShowBusyStatus,ShowAppearOfflineStatus
+				control=ShowOnlineStatus,ShowAwayStatus,ShowInvisibleStatus,ShowAppearOfflineStatus
 				region=box start=Label1 dir=down y=5
 			}
 			place { control=Label2 region=box start=ShowAppearOfflineStatus y=20 width=max dir=down }

@@ -1,4 +1,4 @@
-resource/layout/edittagspage.layout {
+"Resource/layout/edittagspage.layout" {
 
 	layout {
 		region { name=body height=max width=max y=8 }
@@ -8,7 +8,5 @@ resource/layout/edittagspage.layout {
 			place { control=TagChecks region=box start=HideButton dir=down y=20 width=max height=96 }
 			place { control=TextEntry region=box start=TagChecks dir=down y=10 width=max }
 			place { control=AddTagButton region=box start=TextEntry dir=down y=20 align=top-center }
-
-		//place { control= height=0 width=0 margin-left=-9999 }
 	}
 }

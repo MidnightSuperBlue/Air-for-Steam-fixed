@@ -1,42 +1,35 @@
-resource/layout/gamespage_details_subheader.layout {
+"Resource/layout/gamespage_details_subheader.layout" {
 
 	colors {
 		GameDetailsSubHeader.HorizontalSpacing=10
-		GameDetailsSubHeader.VerticalMargin=100
+		GameDetailsSubHeader.VerticalMargin=62
 	}
 
 	styles {
-		CDetailsGameSubHeaderPanel {
-			bgcolor=none
-		}
+		CDetailsGameSubHeaderPanel { bgcolor=none }
 
 		ClientListButton {
 			image=graphics/none
 			minimum-height=0 //reset for button height
 			inset-left=999 //remove default dropdown arrow
 			render_bg {
-				0="image( x0, y0, x1, y1, graphics/onfocus/game_cast )"
+				0="image( x0 + 3, y0 + 3, x1, y1, graphics/onfocus/game_cast )"
 			}
 		}
 
 		ClientListButton:hover {
 			image=graphics/none
 			render_bg {
-				0="image( x0, y0, x1, y1, graphics/onfocus/game_cast_hover )"
+				0="image( x0 + 3, y0 + 3, x1, y1, graphics/onfocus/game_cast_hover )"
 			}
 		}
 
 		DetailsLaunchButton {
-			padding-left=0 padding-right=0 padding-top=0 padding-bottom=0
-			font-size=32
-			bgcolor=none
-			// bgcolor=A2DetailsButton
+			padding-left=30 padding-right=30 padding-top=10 padding-bottom=10
+			bgcolor=A2DetailsButton
 		}
 
-		DetailsLaunchButton:hover {
-			bgcolor=none
-			// bgcolor=A2DetailsButtonHover
-		}
+		DetailsLaunchButton:hover { bgcolor=A2DetailsButtonHover }
 
 		DetailsLaunchButton:active {
 			render_bg {
@@ -48,16 +41,11 @@ resource/layout/gamespage_details_subheader.layout {
 		}
 
 		DetailsInstallButton {
-			padding-left=0 padding-right=0 padding-top=0 padding-bottom=0
-			font-size=32
-			bgcolor=none
-			// bgcolor=A2DetailsButton
+			padding-left=30 padding-right=30 padding-top=10 padding-bottom=10
+			bgcolor=A2DetailsButton
 		}
 
-		DetailsInstallButton:hover {
-			bgcolor=none
-			// bgcolor=A2DetailsButtonHover
-		}
+		DetailsInstallButton:hover { bgcolor=A2DetailsButtonHover }
 
 		DetailsInstallButton:active {
 			render_bg {
@@ -69,15 +57,11 @@ resource/layout/gamespage_details_subheader.layout {
 		}
 
 		DetailsBuyButton {
-			padding-left=0 padding-right=0 padding-top=0 padding-bottom=0
-			font-size=32
-			// bgcolor=A2DetailsButton
+			padding-left=30 padding-right=30 padding-top=10 padding-bottom=10
+			bgcolor=A2DetailsButton
 		}
 
-		DetailsBuyButton:hover {
-			bgcolor=none
-			// bgcolor=A2DetailsButtonHover
-		}
+		DetailsBuyButton:hover { bgcolor=A2DetailsButtonHover }
 
 		DetailsBuyButton:active {
 			render_bg {
@@ -97,15 +81,15 @@ resource/layout/gamespage_details_subheader.layout {
 			control=subheaderlabels
 			region=header
 			dir=down
-			align=left-center
-			y=10
+			align=top-center
+			y=20
 		}
 
 		place {
 			control=clientlist //in-home streaming button
 			start=subheaderlabels
 			region=header
-			align=left-center
+			align=top-center
 			dir=down
 			height=30 width=30
 			y=4
@@ -115,10 +99,10 @@ resource/layout/gamespage_details_subheader.layout {
 			control=launchbutton
 			start=subheaderlabels
 			region=header
-			align=left-center
+			align=top-center
 			dir=down
 			//height=70 width=70
-			y=6
+			y=40
 		}
 	}
 }

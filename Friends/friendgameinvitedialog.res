@@ -1,14 +1,14 @@
-Friends/friendgameinvitedialog.res {
+"Friends/friendgameinvitedialog.res" {
 
 	styles {
 		FriendsPanel {
 			bgcolor=A2Background
+			render {
+				0="image_scale( x0, y0 + 50, x1, y0 + 56, graphics/material/shadow_horiz )"
+			}
 			render_bg {
 				1="fill( x0, y0, x1, y0 + 50, Focus )"
 				2="fill( x0, y1 - 50, x1, y1, A2Ribbon )"
-			}
-			render {
-				0="image_scale( x0, y0 + 50, x1, y0 + 56, graphics/material/shadow_horiz )"
 			}
 		}
 	}

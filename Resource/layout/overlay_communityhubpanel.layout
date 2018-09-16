@@ -1,8 +1,7 @@
-resource/layout/overlay_communityhubpanel.layout {
+"Resource/layout/overlay_communityhubpanel.layout" {
 
 	styles {
-		detailsbox {
-		}
+		detailsbox { }
 
 		button {
 			minimum-height=0 //reset for button height
@@ -10,9 +9,7 @@ resource/layout/overlay_communityhubpanel.layout {
 			render_bg { }
 		}
 
-		button:hover {
-			textcolor=A2TextFocusHover
-		}
+		button:hover { textcolor=A2TextFocusHover }
 	}
 
 	layout {

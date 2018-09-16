@@ -1,4 +1,4 @@
-resource/layout/subpaneloptionsfamily.layout {
+"Resource/layout/subpaneloptionsfamily.layout" {
 
 	layout {
 		place { control=BorrowersLabel width=max }

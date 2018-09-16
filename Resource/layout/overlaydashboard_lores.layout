@@ -1,13 +1,13 @@
-resource/layout/overlaydashboard_lores.layout {
+"Resource/layout/overlaydashboard_lores.layout" {
 
 	styles {
 		overlaymain {
+			render {
+				0="image_scale( x0, y0 + 234, x1, y0 + 240, graphics/material/shadow_horiz )"
+			}
 			render_bg {
 				0="fill( x0, y0, x1, y0 + 234, A2OverlayBar )"
 				1="fill( x0, y0 + 234, x1, y1, A2OverlayBackground )"
-			}
-			render {
-				0="image_scale( x0, y0 + 234, x1, y0 + 240, graphics/material/shadow_horiz )"
 			}
 		}
 
@@ -16,9 +16,7 @@ resource/layout/overlaydashboard_lores.layout {
 			image="graphics/onfocus/overlay_close"
 		}
 
-		OverlayURLLabel:hover {
-			image="graphics/onfocus/overlay_close_hover"
-		}
+		OverlayURLLabel:hover { image="graphics/onfocus/overlay_close_hover" }
 
 		topbar {
 			font-family=condensed

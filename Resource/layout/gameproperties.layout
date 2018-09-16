@@ -1,4 +1,4 @@
-resource/layout/gameproperties.layout {
+"Resource/layout/gameproperties.layout" {
 
 	layout {
 		region { name=header height=50 width=max }
@@ -12,7 +12,5 @@ resource/layout/gameproperties.layout {
 
 		region { name=buttons align=bottom height=50 }
 			place { control=OKButton region=buttons align=right spacing=10 y=10 margin-right=26 }
-
-		//place { control= height=0 width=0 margin-left=-9999 }
 	}
 }

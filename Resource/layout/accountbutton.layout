@@ -1,4 +1,4 @@
-resource/layout/accountbutton.layout {
+"Resource/layout/accountbutton.layout" {
 
 	styles {
 		AccountPersonaStyleOffline {
@@ -15,15 +15,15 @@ resource/layout/accountbutton.layout {
 
 		AccountButtonStyle {
 			render_bg {
-        0="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/account )"
-      }
+				0="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/account )"
+			}
 		}
 
 		AccountButtonStyle:hover {
 			render_bg {
-        0="image( x0, y0, x1, y1, graphics/onfocus/active_circle )"
-        1="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/account )"
-      }
+				0="image( x0, y0, x1, y1, graphics/onfocus/active_circle )"
+				1="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/account )"
+			}
 		}
 
 		AccountBalanceStyle {
@@ -31,15 +31,12 @@ resource/layout/accountbutton.layout {
 			padding-bottom=3
 		}
 
-		AccountMenuButtonStyle {
-			render_bg { }
-		}
+		AccountMenuButtonStyle { render_bg { } }
 	}
 
-	layout
-	{
-		place { control=account_menu_button height=max width=max } // span over everything
-		place { control=account_balance height=max width=max } //necessary to have here, otherwise the button has no width
+	layout {
+		place { control=account_menu_button height=max width=max }	// span over everything
+		place { control=account_balance height=max width=max }		//necessary to have here, otherwise the button has no width
 
 		place { control=account_persona,account_avatar,account_drop_down height=0 width=0 }
 	}

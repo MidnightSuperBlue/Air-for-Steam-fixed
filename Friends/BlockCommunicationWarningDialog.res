@@ -1,4 +1,4 @@
-friends/BlockCommunicationWarningDialog.res {
+"Friends/BlockCommunicationWarningDialog.res" {
 
 	layout {
 		region { name=header height=50 width=max }

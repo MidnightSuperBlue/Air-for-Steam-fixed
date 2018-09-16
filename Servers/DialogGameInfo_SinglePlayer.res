@@ -1,9 +1,11 @@
-Servers/DialogGameInfo_SinglePlayer.res {
+"Servers/DialogGameInfo_SinglePlayer.res" {
 
 	styles {
-		CDialogGameInfo
-			{ minimum-height=140 minimum-width=400 }
-			//reset for main join game dialog w/ server info
+		CDialogGameInfo {
+			minimum-height=140
+			minimum-width=400
+		}
+		//reset for main join game dialog w/ server info
 	}
 
 	layout {

@@ -1,4 +1,4 @@
-resource/layout/edittagsdialog.layout {
+"Resource/layout/edittagsdialog.layout" {
 
 	layout {
 		region { name=header height=50 width=max }

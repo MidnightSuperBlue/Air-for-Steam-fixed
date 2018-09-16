@@ -1,5 +1,5 @@
-"resource/layout/layoutdebugdialog.layout"
-{
+"resource/layout/layoutdebugdialog.layout" {
+
 	styles {
 		LayoutDebugDialog	{
 			bgcolor=A2Background
@@ -10,8 +10,7 @@
 
 		ListPanel {
 			bgcolor=A2Background
-			render_bg
-			{
+			render_bg {
 				0="fill( x0 - 6, y0 - 4, x1 + 6, y1 + 18, A2Background )"
 			}
 		}

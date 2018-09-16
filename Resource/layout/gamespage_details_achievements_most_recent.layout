@@ -1,21 +1,18 @@
-"resource/layout/gamespage_details_achievements_most_recent.layout"
-{
-	colors
-	{
+"Resource/layout/gamespage_details_achievements_most_recent.layout" {
+
+	colors {
 		// ProgressBarMarings must be the combined left+right margin of the actual bar from it's container
 		GameDetailsAchievements.ProgressBarMargins "8"
 
 		Tooltip.Anchor=Parent
 	}
-	styles
-	{
-		mostrecent {
-			minimum-height="130"
-		}
+
+	styles {
+		mostrecent { minimum-height="130" }
 
 		achievementimagebg {
 			bgcolor=none
-      image="graphics/none"
+			image="graphics/none"
 		}
 
 		progressbackground {
@@ -33,8 +30,7 @@
 		}
 	}
 
-	layout
-	{
+	layout {
 		region { name=body width=max height=max }
 
 		place { region=body control=mostrecent_label x=82 y=0 width=max }

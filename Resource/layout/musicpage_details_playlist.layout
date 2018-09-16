@@ -1,24 +1,17 @@
-"resource/layout/musicpage_details_playlist.layout"
-{
+"Resource/layout/musicpage_details_playlist.layout" {
+
 	styles {
+		CMusicPage_Details_Playlist { bgcolor=none }
 
-		CMusicPage_Details_Playlist {
-			bgcolor=none
-		}
+		CoverStyle { }
 
-		CoverStyle {
-		}
+		ActionButtonStyle { }
 
-		ActionButtonStyle {
-		}
-
-		AdditionalActionButtonStyle {
-		}
+		AdditionalActionButtonStyle { }
 	}
 
 	layout {
-
-		region { name=details	y=20 width=max height=max margin-left=20 margin-right=20 overflow=scroll-vertical }
+		region { name=details y=20 width=max height=max margin-left=20 margin-right=20 overflow=scroll-vertical }
 
 		place { control=CoverImage width=160 height=160 }
 

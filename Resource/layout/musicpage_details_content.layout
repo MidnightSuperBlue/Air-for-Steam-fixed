@@ -1,9 +1,7 @@
-resource/layout/musicpage_detail_content.layout {
+"Resource/layout/musicpage_detail_content.layout" {
 
 	styles {
-		AlbumOrArtistListStyle {
-			render_bg { }
-		}
+		AlbumOrArtistListStyle { render_bg { } }
 
 		EmptyDatabaseText { }
 
@@ -21,9 +19,7 @@ resource/layout/musicpage_detail_content.layout {
 			}
 		}
 
-		"CMusicPage_Details_Content ListPanel ScrollBar" {
-			inset-top=20
-		}
+		"CMusicPage_Details_Content ListPanel ScrollBar" { inset-top=20 }
 	}
 
 	layout {

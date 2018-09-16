@@ -1,8 +1,7 @@
-resource/colors/steamblue.styles {
+"Resource/colors/steamblue.styles" {
 
 	colors {
 		Focus="45 77 115 255"
-			//
 
 		Focus2="73 114 151 255"
 			//lighter hue (+28 +37 +36)

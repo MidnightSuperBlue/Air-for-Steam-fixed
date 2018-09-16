@@ -1,5 +1,5 @@
-"friends/gameinvitebar.res"
-{
+"Friends/gameinvitebar.res" {
+
 	styles {
 		CGameInviteBar {
 			render_bg {

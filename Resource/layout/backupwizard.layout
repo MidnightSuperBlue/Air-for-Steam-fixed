@@ -1,4 +1,4 @@
-resource/layout/backupwizard.layout {
+"Resource/layout/backupwizard.layout" {
 
 	layout {
 		region { name=header height=50 width=max }

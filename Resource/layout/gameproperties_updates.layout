@@ -1,4 +1,4 @@
-resource/layout/gameproperties_updates.layout {
+"Resource/layout/gameproperties_updates.layout" {
 
 	layout {
 		region { name=box height=max width=max y=30 margin-left=16 }

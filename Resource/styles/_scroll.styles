@@ -16,7 +16,8 @@ scroll.styles {
 		}
 
 		ScrollBarButton.up {
-			padding-left=0 padding-right=0 //reset
+			padding-left=0
+			padding-right=0 //reset
 			bgcolor=A2ScrollGutter
 			minimum-height=19
 			image=graphics/inactive/scroll/scroll_up
@@ -30,7 +31,8 @@ scroll.styles {
 		}
 
 		ScrollBarButton.down {
-			padding-left=0 padding-right=0 //reset
+			padding-left=0
+			padding-right=0 //reset
 			bgcolor=A2ScrollGutter
 			minimum-height=19
 			inset-top=3
@@ -45,7 +47,8 @@ scroll.styles {
 		}
 
 		ScrollBarButton.left {
-			padding-left=0 padding-right=0 //reset
+			padding-left=0
+			padding-right=0 //reset
 			bgcolor=A2ScrollGutter
 			minimum-width=19
 			image=graphics/inactive/scroll/scroll_left
@@ -59,7 +62,8 @@ scroll.styles {
 		}
 
 		ScrollBarButton.right {
-			padding-left=0 padding-right=0 //reset
+			padding-left=0
+			padding-right=0 //reset
 			bgcolor=A2ScrollGutter
 			minimum-width=19
 			image=graphics/inactive/scroll/scroll_right
@@ -170,8 +174,6 @@ scroll.styles {
 			inset-top=-1
 		}
 
-		"CPlayersDialog Scrollbar" {
-			inset-bottom=18
-		}
+		"CPlayersDialog Scrollbar" { inset-bottom=18 }
 	}
 }

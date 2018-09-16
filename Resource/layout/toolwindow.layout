@@ -1,9 +1,7 @@
-resource/layout/toolwindow.layout {
+"Resource/layout/toolwindow.layout" {
 
 	styles {
-		PageTab {
-			minimum-height=30
-		}
+		PageTab { minimum-height=30 }
 
 		MenuButton {
 			minimum-height=29
@@ -29,13 +27,9 @@ resource/layout/toolwindow.layout {
 			}
 		}
 
-		TabMenuItemFlash {
-			textcolor=A2TextFocusHover
-		}
+		TabMenuItemFlash { textcolor=A2TextFocusHover }
 
-		TabPageCloseButton {
-			padding-right=23
-		}
+		TabPageCloseButton { padding-right=23 }
 
 		//new tab button
 		Button {

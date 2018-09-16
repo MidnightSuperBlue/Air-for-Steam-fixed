@@ -1,6 +1,6 @@
-public/LimitedUserDialog.res {
+"Public/LimitedUserDialog.res" {
 
-layout {
+	layout {
 		region { name=header height=50 width=max }
 			place { control=frame_close height=22 width=22 y=13 align=right margin-right=20 }
 			place { control=frame_captiongrip margin=2 width=max height=50 }

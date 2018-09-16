@@ -1,4 +1,4 @@
-Servers/DialogServerBrowser.res {
+"Servers/DialogServerBrowser.res" {
 
 	layout {
 		region { name=header height=50 width=max }
@@ -11,7 +11,5 @@ Servers/DialogServerBrowser.res {
 
 		region { name=buttons align=bottom height=50 }
 			place { control=StatusLabel region=buttons align=left spacing=10 y=10 height=30 margin-left=26 }
-
-		//place { control= height=0 width=0 margin-left=-9999 }
 	}
 }

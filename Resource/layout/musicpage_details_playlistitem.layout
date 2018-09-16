@@ -1,10 +1,7 @@
-"resource/layout/musicpage_details_playlistitem.layout"
-{
-	styles {
+"resource/layout/musicpage_details_playlistitem.layout" {
 
-		PositionLabelStyle {
-			padding-right=10
-		}
+	styles {
+		PositionLabelStyle { padding-right=10 }
 
 		TrackLabelStyle {
 			render_bg {
@@ -20,8 +17,7 @@
 	}
 
 	layout {
-
 		place {	control=PositionLabel 	width=40 height=max }
-		place {	control=TrackLabel 			x=50 width=max height=max }
+		place {	control=TrackLabel 		x=50 width=max height=max }
 	}
 }

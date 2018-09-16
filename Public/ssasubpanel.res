@@ -1,10 +1,6 @@
-"public/ssasubpanel.res"
-{
-	 styles
-	{
-		Important
-		{			
-			textcolor="Text"
-		}	
-	}	
+"Public/ssasubpanel.res" {
+
+	styles {
+		Important { textcolor="Text" }
+	}
 }

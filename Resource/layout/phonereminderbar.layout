@@ -1,4 +1,4 @@
-resource/layout/phonereminderbar.layout {
+"Rresource/layout/phonereminderbar.layout" {
 
 	styles {
 		CPhoneReminderBar {
@@ -8,13 +8,12 @@ resource/layout/phonereminderbar.layout {
 			}
 		}
 
-		soft {
-			minimum-width=780
-		}
+		soft { minimum-width=780 }
 
 		ButtonStyle {
 			minimum-height=0
-			padding-left=0 padding-right=0
+			padding-left=0
+			padding-right=0
 			render_bg { }
 		}
 	}

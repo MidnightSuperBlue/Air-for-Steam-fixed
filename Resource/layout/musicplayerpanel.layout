@@ -1,4 +1,4 @@
-resource/layout/musicplayerpanel.layout {
+"Resource/layout/musicplayerpanel.layout" {
 
 	styles {
 		ListPanelInterior:scrollbar {
@@ -7,67 +7,60 @@ resource/layout/musicplayerpanel.layout {
 			}
 		}
 
-		ClientTitle {
-			textcolor=none
-		}
+		ClientTitle { textcolor=none }
 
-		ClientTitle:FrameFocus {
-			textcolor=none
-		}
+		ClientTitle:FrameFocus { textcolor=none }
 
-		NoTracksLabelStyle
-			{ bgcolor=none render_bg { } image=graphics/music_background }
+		NoTracksLabelStyle { bgcolor=none render_bg { } image=graphics/music_background }
 
 		CurrentAlbumImageStyle { }
 
-		SeekBarStyle {
-			bgcolor=none
+		SeekBarStyle { bgcolor=none }
+
+		RepeatButtonStyle { render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/repeat )" } }
+
+		RepeatButtonStyle:selected {
+			render_bg {
+				0="fill( x0, y0, x1, y1 - 6, focus )"
+				1="image( x0, y0, x1, y1, graphics/active/music/repeat_enabled )"
+			}
 		}
 
-		RepeatButtonStyle
-			{ render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/repeat )" } }
+		RepeatOnceButtonStyle:selected {
+			render_bg {
+				0="fill( x0, y0, x1, y1 - 6, focus )"
+				1="image( x0, y0, x1, y1, graphics/active/music/repeatone_enabled )"
+			}
+		}
 
-		RepeatButtonStyle:selected
-			{ render_bg { 0="fill( x0, y0, x1, y1 - 6, focus )" 1="image( x0, y0, x1, y1, graphics/active/music/repeat_enabled )" } }
+		ShuffleButtonStyle { render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/shuffle )" } }
 
-		RepeatOnceButtonStyle:selected
-			{ render_bg { 0="fill( x0, y0, x1, y1 - 6, focus )" 1="image( x0, y0, x1, y1, graphics/active/music/repeatone_enabled )" } }
+		ShuffleButtonStyle:selected {
+			render_bg {
+				0="fill( x0, y0, x1, y1 - 6, focus )"
+				1="image( x0, y0, x1, y1, graphics/active/music/shuffle_enabled )"
+			}
+		}
 
-		ShuffleButtonStyle
-			{ render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/shuffle )" } }
+		PreviousButtonStyle { render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/back )" } }
 
-		ShuffleButtonStyle:selected
-			{ render_bg { 0="fill( x0, y0, x1, y1 - 6, focus )" 1="image( x0, y0, x1, y1, graphics/active/music/shuffle_enabled )" } }
+		NextButtonStyle { render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/fwd )" } }
 
-		PreviousButtonStyle
-			{ render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/back )" } }
+		PlayButtonStyle { render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/play )" } }
 
-		NextButtonStyle
-			{ render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/fwd )" } }
+		PauseButtonStyle { render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/pause )" } }
 
-		PlayButtonStyle
-			{ render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/play )" } }
+		VolumeButtonStyle { render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/volume )" } }
 
-		PauseButtonStyle
-			{ render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/pause )" } }
+		VolumeButtonActiveStyle { render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/volume )" } }
 
-		VolumeButtonStyle
-			{ render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/volume )" } }
+		MuteVolumeButtonStyle { render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/mute )" } }
 
-		VolumeButtonActiveStyle
-			{ render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/volume )" } }
+		MuteVolumeButtonActiveStyle { render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/mute )" } }
 
-		MuteVolumeButtonStyle
-			{ render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/mute )" } }
+		BrowseButtonStyle { render_bg { } }
 
-		MuteVolumeButtonActiveStyle
-			{ render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/mute )" } }
-
-		BrowseButtonStyle
-			{ render_bg { } }
-
-		BrowseButtonStyle:hover
-			{ render_bg { } }
+		BrowseButtonStyle:hover { render_bg { } }
 	}
 
 	layout {

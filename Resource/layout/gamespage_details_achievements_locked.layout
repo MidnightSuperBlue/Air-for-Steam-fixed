@@ -1,7 +1,6 @@
-"resource/layout/gamespage_details_achievements_locked.layout"
-{
-	colors
-	{
+"resource/layout/gamespage_details_achievements_locked.layout" {
+
+	colors {
 		// Note, the below values are used for dynamic layout in code, and must match the values from place
 		// commands below for layout to work correctly.
 
@@ -17,27 +16,18 @@
 		Tooltip.Anchor=Parent
 	}
 
-	styles
-	{
+	styles {
+		achievementlabelmore { font-size=18 }
 
-		achievementlabelmore {
-			textcolor=none
-			inset-left=-99
-			inset-top=-99
-    }
-
-		lockedarea {
-			minimum-height="69"
-		}
+		lockedarea { minimum-height="69" }
 
 		achievementimagebg {
 			bgcolor=none
-      image="graphics/none"
+			image="graphics/none"
 		}
 	}
 
-	layout
-	{
+	layout {
 		region { name=body width=max height=max }
 		region { name=images region=body y=26 width=max height=48 }
 
@@ -45,14 +35,12 @@
 
 		place {
 			region=images
-			control=*achievementimage
+			control=*achievementimage,achievementlabelmore
 			margin-left=-3
 			dir=right
 			width=42
 			height=42
 			spacing=10
 		}
-
-		place { control="achievementlabelmore" height=0 width=0 }
 	}
 }

@@ -1,4 +1,4 @@
-resource/layout/setcustomimagedialog.layout {
+"Resource/layout/setcustomimagedialog.layout" {
 
 	layout {
 		region { name=header height=50 width=max }

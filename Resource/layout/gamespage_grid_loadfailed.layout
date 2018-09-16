@@ -1,9 +1,7 @@
-resource/layout/gamespage_grid_loadfailed.layout {
+"Resource/layout/gamespage_grid_loadfailed.layout" {
 
 	styles {
-		GamesGridPlaceholder {
-
-		}
+		GamesGridPlaceholder { }
 
 		GamesGridIconBorder {
 			bgcolor=none
@@ -11,9 +9,7 @@ resource/layout/gamespage_grid_loadfailed.layout {
 			render { }
 		}
 
-		GGPlaceholderBG {
-			bgcolor=none
-		}
+		GGPlaceholderBG { bgcolor=none }
 	}
 
 	layout {

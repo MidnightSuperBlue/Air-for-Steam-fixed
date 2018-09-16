@@ -1,4 +1,4 @@
-resource/layout/overlay_broadcastpanel.layout {
+"Resource/layout/overlay_broadcastpanel.layout" {
 
 	styles {
 		COverlayBroadcastChatDialog {
@@ -17,9 +17,7 @@ resource/layout/overlay_broadcastpanel.layout {
 			}
 		}
 
-		"RichText Scrollbar" {
-			inset-bottom=21
-		}
+		"RichText Scrollbar" { inset-bottom=21 }
 	}
 
 	layout {
@@ -39,10 +37,10 @@ resource/layout/overlay_broadcastpanel.layout {
 			margin-bottom=-15
 		}
 
-		place { control=StatusLabel					region=bottom height=30 width=max margin-left=10 margin-right=10 }
+		place { control=StatusLabel			region=bottom height=30 width=max margin-left=10 margin-right=10 }
 
-		place { control=TextEntry						region=bottom x=7 y=42 height=36 width=max end-right=EmoticonButton margin-right=9 }
-		place { control=EmoticonButton			region=bottom align=right y=36 height=50 margin-right=17 }
+		place { control=TextEntry			region=bottom x=7 y=42 height=36 width=max end-right=EmoticonButton margin-right=9 }
+		place { control=EmoticonButton		region=bottom align=right y=36 height=50 margin-right=17 }
 
 		place { control=SendButton height=0 width=0 margin-left=-9999 }
 	}

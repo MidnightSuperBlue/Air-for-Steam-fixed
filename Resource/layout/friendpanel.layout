@@ -1,27 +1,20 @@
-resource/layout/friendpanel.layout {
+"Resource/layout/friendpanel.layout" {
 
 	styles {
 		SelfPanel { }
-
 		CFriendsPanel { }
 
-		WebStatusStyle
-			{ image="graphics/friends/status_web" }
+		WebStatusStyle { image="graphics/friends/status_web" }
 
-		BigPictureStatusStyle
-			{ image="graphics/friends/status_bigpic" }
+		BigPictureStatusStyle { image="graphics/friends/status_bigpic" }
 
-		MobileStatusStyle
-			{ image="graphics/friends/status_mobile" }
+		MobileStatusStyle { image="graphics/friends/status_mobile" }
 
-		WebStatusStyleInGame
-			{ image="graphics/friends/status_web_ingame" }
+		WebStatusStyleInGame { image="graphics/friends/status_web_ingame" }
 
-		BigPictureStatusStyleInGame
-			{ image="graphics/friends/status_bigpic_ingame" }
+		BigPictureStatusStyleInGame { image="graphics/friends/status_bigpic_ingame" }
 
-		MobileStatusStyleInGame
-			{ image="graphics/friends/status_mobile_ingame" }
+		MobileStatusStyleInGame { image="graphics/friends/status_mobile_ingame" }
 	}
 
 	layout {
@@ -34,7 +27,11 @@ resource/layout/friendpanel.layout {
 		place { control=AcceptLink,IgnoreLink,BlockLink x=53 y=25 spacing=8 }
 		place { control=ControlPanelLink x=53 y=25 }
 
-		place { control=BigPictureStatusImage,MobileStatusImage,WebStatusImage,BigPictureStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame start=GameLabel x=8 }
+		place {
+			control=BigPictureStatusImage,MobileStatusImage,WebStatusImage,BigPictureStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame
+			start=GameLabel
+			x=8
+		}
 
 		place { control=SuggestedImage,SuggestedLabel x=53 y=9 spacing=4 }
 		place { control=SuggestedInvite,SuggestedIgnore x=53 y=25 spacing=8 }

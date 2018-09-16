@@ -1,4 +1,4 @@
-friends/friendaliasesdialog.res {
+"Friends/friendaliasesdialog.res" {
 
 	layout {
 		region { name=header height=50 width=max }

@@ -1,4 +1,4 @@
-resource/layout/gamespage_grid_chrome.layout {
+"Resource/layout/gamespage_grid_chrome.layout" {
 
 	styles {
 		GridItemChrome { }
@@ -10,8 +10,7 @@ resource/layout/gamespage_grid_chrome.layout {
 			bgcolor=AD200
 		}
 
-		"GameItem_Uninstalled CUILaunchButton" {
-		}
+		"GameItem_Uninstalled CUILaunchButton" { }
 	}
 
 	layout {

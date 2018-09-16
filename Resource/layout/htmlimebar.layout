@@ -1,4 +1,4 @@
-resource/layout/htmlimebar.layout {
+"Resource/layout/htmlimebar.layout" {
 
 	styles {
 		CHTMLIMEBar {

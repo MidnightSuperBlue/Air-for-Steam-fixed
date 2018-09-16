@@ -1,9 +1,7 @@
-steam/cached/overlaywebbrowser.layout {
+"Steam/cached/overlaywebbrowser.layout" {
 
 	styles {
-		HTML {
-			inset="0 0 0 0"
-		}
+		HTML { inset="0 0 0 0" }
 	}
 
 	layout {

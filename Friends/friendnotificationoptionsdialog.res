@@ -1,4 +1,4 @@
-friends/friendnotificationoptionsdialog.res {
+"Friends/friendnotificationoptionsdialog.res" {
 
 	layout {
 		region { name=header height=50 width=max }

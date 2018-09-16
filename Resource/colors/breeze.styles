@@ -1,22 +1,19 @@
-resource/colors/breeze.styles {
+"Resource/colors/breeze.styles" {
 
-  colors {
-    Focus="0 162 224 255"
-      //
+	colors {
+		Focus="0 162 224 255"
 
-    Focus2="28 199 255 255"
-      //lighter hue (+28 +37 +36)
+		Focus2="28 199 255 255"
+			//lighter hue (+28 +37 +36)
 
-    Focus3="0 152 212 255"
-      //darker hue (-5% brightness)
+		Focus3="0 152 212 255"
+			//darker hue (-5% brightness)
 
-    Focus4="0 152 212 150"
-      //Focus3 transparent for details box
+		Focus4="0 152 212 150"
+			//Focus3 transparent for details box
 
-    A2TextFocus="Focus"
-      //
+		A2TextFocus="Focus"
 
-    A2TextFocusHover="Focus2"
-      //
-  }
+		A2TextFocusHover="Focus2"
+	}
 }

@@ -1,7 +1,6 @@
-"resource/layout/parentalunlockdialog.layout"
-{
-	styles
-	{
+"Resource/layout/parentalunlockdialog.layout" {
+
+	styles {
 		ParentalUnlockDialog {
 			minimum-width = 400
 			minimum-height = 250
@@ -17,8 +16,7 @@
 		Key { textcolor=none }
 	}
 
-	layout
-	{
+	layout {
 		region { name="top" width=max height=260 margin=10 margin-top=40 }
 		region { name="bottom" width=max align=bottom height=36 align="bottom" }
 
@@ -30,9 +28,16 @@
 
 		place {
 			control="OK,Cancel"
-			region="bottom" width=92 height=25 align=right margin-right=10 margin-top=0 margin-bottom=2 spacing=10
-			}
+			region="bottom"
+			width=92
+			height=25
+			align=right
+			margin-right=10
+			margin-top=0
+			margin-bottom=2
+			spacing=10
 		}
 
 		place { control="KeyImage" height=0 width=0 }
+	}
 }

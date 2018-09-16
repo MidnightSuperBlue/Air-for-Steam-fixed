@@ -1,5 +1,4 @@
-"resource/layout/chattitlepanel.layout"
-{
+"resource/layout/chattitlepanel.layout" {
 
 	styles {
 		MenuButton {

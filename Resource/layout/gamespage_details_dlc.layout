@@ -1,4 +1,4 @@
-resource/layout/gamespage_details_dlc.layout {
+"Resource/layout/gamespage_details_dlc.layout" {
 
 	colors {
 		//margin-top + margin-btm + button-height + desired button spacing + y-spacing + dlclist height
@@ -23,12 +23,9 @@ resource/layout/gamespage_details_dlc.layout {
 			}
 		}
 
-		ListPanelInterior {
-			inset-left=-3
-		}
+		ListPanelInterior { inset-left=-3 }
 
-		mostrecenttime {
-		}
+		mostrecenttime { }
 	}
 
 	layout {

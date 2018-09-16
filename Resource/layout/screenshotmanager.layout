@@ -1,4 +1,4 @@
-resource/layout/screenshotmanager.layout {
+"Resource/layout/screenshotmanager.layout" {
 
 	styles {
 		ThumbnailUnpublished { }
@@ -6,38 +6,30 @@ resource/layout/screenshotmanager.layout {
 		ThumbnailPublished { }
 
 		ThumbnailSelected {
-			render_bg {
-				0="fill( x0, y0, x1, y1, black )"
-			}
 			render {
 				0="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/screenshot_check )"
 			}
+			render_bg {
+				0="fill( x0, y0, x1, y1, black )"
+			}
 		}
 
-		DarkRegionDetails {
-			bgcolor=none
-		}
+		DarkRegionDetails { bgcolor=none }
 
 		SSDetails {
 			minimum-width=320
 			minimum-height=180
 		}
 
-		CScreenshotCaptionEntry {
-			inset-left=0
-		}
+		CScreenshotCaptionEntry { inset-left=0 }
 
 		publishcaption { }
 		publishcaptionprompt { }
 		publishcharsleft { }
 
-		publishcharsleft_toomanychars {
-			textcolor=red
-		}
+		publishcharsleft_toomanychars { textcolor=red }
 
-		WrapPanel {
-			inset-top=-1
-		}
+		WrapPanel { inset-top=-1 }
 
 		gameselector {
 			minimum-width=220
@@ -71,30 +63,41 @@ resource/layout/screenshotmanager.layout {
 
 		region { name=details region=body width=366 height=max align=right margin-right=26 margin-left=20 }
 
-		place { control=DarkRegionDetails 				region=details width=max height=max z=-1 }
-		place { control=SSDetails 								region=details y=60 width=320 height=180 align=top-center }
-		place { control=SSDate 										region=details y=22 }
+		place { control=DarkRegionDetails 			region=details width=max height=max z=-1 }
+		place { control=SSDetails 					region=details y=60 width=320 height=180 align=top-center }
+		place { control=SSDate 						region=details y=22 }
 		place { control=SSSize,SSSizeOriginal 		region=details y=22 align=right }
 
-		place { control=spoiler_checkbox 					region=details start=SSDetails y=10 dir=down }
+		place { control=spoiler_checkbox 			region=details start=SSDetails y=10 dir=down }
 
-		place { control=publish_caption 					region=details start=spoiler_checkbox dir=down height=36 width=max y=10 }
-		place { control=publish_charsleft 				region=details start=publish_caption dir=down margin-top=6 align=right }
+		place { control=publish_caption 			region=details start=spoiler_checkbox dir=down height=36 width=max y=10 }
+		place { control=publish_charsleft 			region=details start=publish_caption dir=down margin-top=6 align=right }
 
-		place { control=details_caption 					region=details start=SSDetails y=20 width=max dir=down } //published caption
+		place { control=details_caption 			region=details start=SSDetails y=20 width=max dir=down } //published caption
 
-		//place { control="null_placer" region="details" width=1 align=bottom margin-bottom=2 }
+		place { control=multi_img_selected 												region=details y=120 align=top-center }
+		place { control=multi_img_upload_size,multi_img_upload_size_info 				region=details y=149 align=top-center spacing=5 }
+		place { control=multi_img_storage_remaining,multi_img_storage_remaining_info 	region=details y=168 align=top-center spacing=5 }
 
-		place { control=multi_img_selected 																							region=details y=120 align=top-center }
-		place { control=multi_img_upload_size,multi_img_upload_size_info 								region=details y=149 align=top-center spacing=5 }
-		place { control=multi_img_storage_remaining,multi_img_storage_remaining_info 		region=details y=168 align=top-center spacing=5 }
+		place { control=file_not_loaded_label region=details y=140 align=top-center }
 
-		place { control=file_not_loaded_label 				region=details y=140 align=top-center }
+		place {
+			control=multiselect_button,view_local_library_button,view_screenshots
+			region=buttons
+			align=left
+			spacing=10
+			margin-left=26
+			margin-bottom=10
+		}
 
-		place { control=multiselect_button,view_local_library_button,view_screenshots 		region=buttons align=left spacing=10 margin-left=26 margin-bottom=10 }
-		place { control=delete_button,details_button,publish_button 											region=buttons align=right spacing=10 margin-right=26 margin-bottom=10 }
-		place { control=multi_img_delete,multi_img_upload 																region=buttons align=right spacing=10 margin-right=26 margin-bottom=10 }
+		place { control=delete_button,details_button,publish_button 			region=buttons align=right spacing=10 margin-right=26 margin-bottom=10 }
+		place { control=multi_img_delete,multi_img_upload 						region=buttons align=right spacing=10 margin-right=26 margin-bottom=10 }
 
-		place { control=multi_img,multi_img_count,instr_no_selection,instr_no_selection_title,selectorlabel,null_placer height=0 width=0 margin-left=-9999 }
+		place {
+			control=multi_img,multi_img_count,instr_no_selection,instr_no_selection_title,selectorlabel,null_placer
+			height=0
+			width=0
+			margin-left=-9999
+		}
 	}
 }

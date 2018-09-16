@@ -1,5 +1,5 @@
-"friends/voicebar.res"
-{
+"Friends/voicebar.res" {
+
 	styles {
 		CVoiceBar {
 			render_bg {

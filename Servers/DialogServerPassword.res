@@ -1,4 +1,4 @@
-Servers/DialogServerPassword.res {
+"Servers/DialogServerPassword.res" {
 
 	layout {
 		region { name=header height=50 width=max }

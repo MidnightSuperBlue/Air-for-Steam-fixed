@@ -1,5 +1,5 @@
-"resource/layout/broadcast_livebanner.layout"
-{
+"Resource/layout/broadcast_livebanner.layout" {
+
 	colors {
 		transparent_bg = "0 0 0 80"
 		debug_green = "0 128 0 255"

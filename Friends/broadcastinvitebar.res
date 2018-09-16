@@ -1,5 +1,5 @@
-"friends/broadcastinvitebar.res"
-{
+"Friends/broadcastinvitebar.res" {
+
 	styles {
 		CBroadcastInviteBar {
 			render_bg {

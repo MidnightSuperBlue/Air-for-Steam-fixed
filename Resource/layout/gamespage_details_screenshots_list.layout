@@ -1,7 +1,6 @@
-"resource/layout/gamespage_details_screenshots_list.layout"
-{
-	colors
-	{
+"Resource/layout/gamespage_details_screenshots_list.layout" {
+
+	colors {
 		// Note, the below values are used for dynamic layout in code, and must match the values from place
 		// commands below for layout to work correctly.
 
@@ -17,21 +16,17 @@
 		Tooltip.Anchor=Parent
 	}
 
-	styles
-	{
-		screenshotslabelmore //to hide the more button, impossible through layout
-		{
+	styles {
+		screenshotslabelmore //to hide the more button, impossible through layout {
 			textcolor=none
 			inset-left=-99
 			inset-top=-99
 		}
 	}
 
-	layout
-	{
+	layout {
 		region { name=body margin=0 width=max height=max }
 
 		place { control="screenshotslabelmore" region=body height=0 width=0 }
 	}
 }
-

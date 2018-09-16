@@ -1,4 +1,4 @@
-public/ScreenshotNotification.res {
+"Public/ScreenshotNotification.res" {
 
 	styles {
 		Label { font-family=medium font-size=16 font-size=15 [$LINUX] font-weight=500 textcolor=A2TextNotification font-style=regular }

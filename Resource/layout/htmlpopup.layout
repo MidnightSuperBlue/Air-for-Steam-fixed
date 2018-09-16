@@ -1,7 +1,6 @@
-resource/layout/htmlpopup.layout {
+"Resource/layout/htmlpopup.layout" {
 
-	styles {
-	}
+	styles { }
 
 	layout {
 		region { name=header height=50 width=max }

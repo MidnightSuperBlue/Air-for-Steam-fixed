@@ -1,5 +1,5 @@
-"resource/layout/gamespage_details_news.layout"
-{
+"resource/layout/gamespage_details_news.layout" {
+
 	colors {
 		//margin-top + margin-btm + button-height + desired button spacing + y-spacing
 		//20 + 30 + 26 + 20 + 60

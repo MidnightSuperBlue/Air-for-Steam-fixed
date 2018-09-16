@@ -1,4 +1,4 @@
-servers/InternetGamesPage.res {
+"Servers/InternetGamesPage.res" {
 
 	styles {
 		ListPanelInterior {
@@ -13,7 +13,14 @@ servers/InternetGamesPage.res {
 			place { control=gamelist region=box width=max height=max }
 
 		region { name=buttons align=bottom height=50 }
-			place { control=Filter,AddServerButton,RefreshQuickButton,RefreshButton,ConnectButton region=buttons align=right spacing=10 y=10 margin-right=26 }
+			place {
+				control=Filter,AddServerButton,RefreshQuickButton,RefreshButton,ConnectButton
+				region=buttons
+				align=right
+				spacing=10
+				y=10
+				margin-right=26
+			}
 
 		place { control=FilterString height=0 width=0 margin-left=-9999 }
 	}

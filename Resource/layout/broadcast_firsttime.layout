@@ -1,4 +1,4 @@
-friends/broadcast_firsttime.layout {
+"Resource/layout/broadcast_firsttime.layout" {
 
 	styles {
 		IntroHeading { }
@@ -18,7 +18,11 @@ friends/broadcast_firsttime.layout {
 			place { control=PermissionHeader region=box start=Header dir=down width=max y=30 }
 			place {
 				control=PermissionDisabled,PermissionAccept,PermissionFriends,PermissionPublic
-				region=box dir=down width=max start=PermissionHeader y=5
+				region=box
+				dir=down
+				width=max
+				start=PermissionHeader
+				y=5
 			}
 			place { control=DesktopOnlyLabel region=box dir=down width=max start=PermissionPublic y=30 }
 			place { control=FAQLink region=box dir=down width=max start=DesktopOnlyLabel y=30 }

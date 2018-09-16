@@ -1,4 +1,4 @@
-resource/layout/playersdialog.layout {
+"Resource/layout/playersdialog.layout" {
 
 	layout {
 		region { name=header height=50 width=max }

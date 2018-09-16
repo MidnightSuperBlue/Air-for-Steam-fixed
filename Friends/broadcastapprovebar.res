@@ -1,5 +1,5 @@
-"friends/broadcastapprovebar.res"
-{
+"Friends/broadcastapprovebar.res" {
+
 	styles {
 		CBroadcastApproveBar {
 			render_bg {
@@ -20,8 +20,8 @@
 			}
 		}
 
-		Label { font-family=medium font-size=16 font-weight=500 textcolor=A2TextNotification font-style=regular }
-		URLLabel { font-family=medium font-size=16 font-weight=500 textcolor=A2TextNotification font-style=regular }
+		Label		{ font-family=medium font-size=16 font-weight=500 textcolor=A2TextNotification font-style=regular }
+		URLLabel	{ font-family=medium font-size=16 font-weight=500 textcolor=A2TextNotification font-style=regular }
 	}
 
 	layout {

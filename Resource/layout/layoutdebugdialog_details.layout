@@ -1,5 +1,5 @@
-"resource/layout/layoutdebugdialog_details.layout"
-{
+"resource/layout/layoutdebugdialog_details.layout" {
+
 	styles {
 		Page {
 			bgcolor=A2Background

@@ -1,4 +1,4 @@
-resource/layout/twofactorcodechallenge.layout {
+"Resource/layout/twofactorcodechallenge.layout" {
 
 	layout {
 		region { name=header height=50 width=max }

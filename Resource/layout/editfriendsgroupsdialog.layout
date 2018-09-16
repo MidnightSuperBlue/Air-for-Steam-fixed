@@ -1,4 +1,4 @@
-resource/layout/editfriendsgroupsdialog.layout {
+"Resource/layout/editfriendsgroupsdialog.layout" {
 
 	layout {
 		region { name=header height=50 width=max }

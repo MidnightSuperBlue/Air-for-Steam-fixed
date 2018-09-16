@@ -1,4 +1,4 @@
-resource/layout/screenshotsuploaddialog.layout {
+"Resource/layout/screenshotsuploaddialog.layout" {
 
 	styles {
 		SlimProgressBar { }
@@ -26,7 +26,13 @@ resource/layout/screenshotsuploaddialog.layout {
 			place { control=visibility_options region=box start=storage_remaining width=150 dir=down y=20 }
 			place { control=share_to_facebook_check_button region=box start=visibility_options dir=down y=20 }
 
-			place { region=box control=shared_to_facebook_ok_label,shared_to_facebook_no_multi_label,shared_to_facebook_no_private_label start=share_to_facebook_check_button dir=down width=max y=20 }
+			place {
+				control=shared_to_facebook_ok_label,shared_to_facebook_no_multi_label,shared_to_facebook_no_private_label
+				region=box
+				start=share_to_facebook_check_button
+				dir=down
+				width=max y=20
+			}
 
 		region { name=buttons align=bottom height=50 }
 			place { control=upload_button,cancel_button region=buttons align=right spacing=10 y=10 margin-right=26 }

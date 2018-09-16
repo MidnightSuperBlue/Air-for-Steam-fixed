@@ -1,4 +1,4 @@
-resource/layout/downloadsummarypanel.layout {
+"Resource/layout/downloadsummarypanel.layout" {
 
 	styles {
 		CDownloadSummaryPanel { render_bg { } }

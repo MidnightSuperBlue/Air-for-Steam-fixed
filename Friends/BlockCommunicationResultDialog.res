@@ -1,4 +1,4 @@
-friends/BlockCommunicationResultDialog.res {
+"Friends/BlockCommunicationResultDialog.res" {
 
 	layout {
 		region { name=header height=50 width=max }

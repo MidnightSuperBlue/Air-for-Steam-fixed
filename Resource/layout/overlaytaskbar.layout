@@ -1,7 +1,6 @@
-resource/layout/overlaytaskbar.layout {
+"Resource/layout/overlaytaskbar.layout" {
 
-	styles {
-	}
+	styles { }
 
 	layout {
 		place { control=TaskbarPanel height=max width=max }

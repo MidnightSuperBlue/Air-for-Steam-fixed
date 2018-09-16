@@ -1,4 +1,4 @@
-Friends/FriendsDialog.res {
+"Friends/FriendsDialog.res" {
 
 	styles {
 		FriendsSearch:empty {
@@ -23,9 +23,7 @@ Friends/FriendsDialog.res {
 			//minimum-width=75
 		}
 
-		PageTab:selected {
-			render_bg { }
-		}
+		PageTab:selected { render_bg { } }
 	}
 
 	layout {

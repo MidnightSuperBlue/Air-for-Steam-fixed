@@ -1,4 +1,4 @@
-resource/layout/announcement_web.layout {
+"Resource/layout/announcement_web.layout" {
 
 	layout {
 		place { control=announcementnotch,announcementbg,announcementweb height=0 width=0 }

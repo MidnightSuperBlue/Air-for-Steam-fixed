@@ -1,23 +1,23 @@
-resource/layout/appdownloadpanel.layout {
+"Resource/layout/appdownloadpanel.layout" {
 
 	styles {
 		panelStyle {
 			minimum-height=180
-			render_bg {
-				0="fill( x0, y0, x1, y1, A2Ribbon )"
-			}
 			render {
 				0="fill( x0, y1 - 1, x1, y1, A2Divider )"
+			}
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2Ribbon )"
 			}
 		}
 
 		panelStyleHighlight {
 			minimum-height=180
-			render_bg {
-				0="fill( x0, y0, x1, y1, A2Ribbon )"
-			}
 			render {
 				0="fill( x0, y1 - 1, x1, y1, A2Divider )"
+			}
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2Ribbon )"
 			}
 		}
 
@@ -59,31 +59,37 @@ resource/layout/appdownloadpanel.layout {
 
 		SlimProgressBar {
 			bgcolor=none
+			render { }
 			render_bg {
 				0="fill( x0 + 1, y0, x1 - 1, y1, none )"
 			}
-			render { }
 		}
 
-		SmRemoveButton
-			{ minimum-height=24 minimum-width=24 padding-left=0 padding-right=0
-				render_bg { } render { 1="image( x0, y0, x1, y1, graphics/active/downloads/remove )" } }
+		SmRemoveButton {
+			minimum-height=24
+			minimum-width=24
+			padding-left=0
+			padding-right=0
+			render { 1="image( x0, y0, x1, y1, graphics/active/downloads/remove )" }
+			render_bg { }
+		}
 
-		SmRemoveButton:hover
-			{ render_bg { } render { 1="image( x0, y0, x1, y1, graphics/active/downloads/remove )" } }
+		SmRemoveButton:hover { render { 1="image( x0, y0, x1, y1, graphics/active/downloads/remove )" } render_bg { } }
 
-		SmRemoveButton:active
-			{ render_bg { } render { 1="image( x0, y0, x1, y1, graphics/active/downloads/remove )" } }
+		SmRemoveButton:active { render { 1="image( x0, y0, x1, y1, graphics/active/downloads/remove )" } render_bg { } }
 
-		topOfQueueButton
-			{ minimum-height=24 minimum-width=24 padding-left=0 padding-right=0
-				render_bg { } render { 1="image( x0, y0, x1, y1, graphics/active/downloads/top )" } }
+		topOfQueueButton {
+			minimum-height=24
+			minimum-width=24
+			padding-left=0
+			padding-right=0
+			render { 1="image( x0, y0, x1, y1, graphics/active/downloads/top )" }
+			render_bg { }
+		}
 
-		topOfQueueButton:hover
-			{ render_bg { } render { 1="image( x0, y0, x1, y1, graphics/active/downloads/top )" } }
+		topOfQueueButton:hover { render { 1="image( x0, y0, x1, y1, graphics/active/downloads/top )" } render_bg { } }
 
-		topOfQueueButton:active
-			{ render_bg { } render { 1="image( x0, y0, x1, y1, graphics/active/downloads/top )" } }
+		topOfQueueButton:active { render { 1="image( x0, y0, x1, y1, graphics/active/downloads/top )" } render_bg { } }
 	}
 
 	layout {
@@ -96,7 +102,13 @@ resource/layout/appdownloadpanel.layout {
 		place { control=gameimage region=box y=75 height=69 width=184 }
 
 		place { control=downloadtotallabel,downloadtotalfield region=column2 spacing=10 y=75 height=19 }
-		place { control=timecompletedlabel,timecompletedfield,starttimelabel,starttimefield,pausereasonlabel,pausereasonfield region=column2 spacing=10 y=101 height=19 }
+		place {
+			control=timecompletedlabel,timecompletedfield,starttimelabel,starttimefield,pausereasonlabel,pausereasonfield
+			region=column2
+			spacing=10
+			y=101
+			height=19
+		}
 		place { control=timeremaininglabel,timeremainingfield region=column2 spacing=10 y=127 height=19 }
 
 		place { control=launchbutton,newslink,settingslink region=box y=65 align=right dir=down }

@@ -1,4 +1,4 @@
-resource/layout/gamespage_details_friends_list.layout {
+"Resource/layout/gamespage_details_friends_list.layout" {
 
 	colors {
 		// Note the margin/spacing/width values here must match what is used in placement below
