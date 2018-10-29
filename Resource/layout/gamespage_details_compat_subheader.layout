@@ -4,7 +4,7 @@
 		CDetailsCompatSubHeaderPanel { }
 
 		RichTextSimple {
-			minimum-width=280
+			minimum-width=310
 		}
 	}
 
