@@ -62,6 +62,47 @@ steam.styles {
 	}
 
 	styles {
+		 view_friends [!$OSX] {
+			textcolor="LabelFocus"
+			bgcolor="none"
+			font-family=basefont
+			font-size=16
+			font-weight=500
+			font-style=regular,uppercase
+			padding-top=5
+			padding-right=28
+			render_bg {
+				1="image( x1-30, y0+20, x0, y0, graphics/icon_friendslist )"
+			}
+		}
+		view_friends [$OSX] {
+			textcolor="LabelFocus"
+			bgcolor="none"
+			font-family=basefont
+			font-size=13
+			font-weight=400
+			font-style=regular,uppercase
+			padding-top=-1
+			padding-right=28
+			render_bg
+			{
+				1="image( x0-12, y0, x1, y1, graphics/glow_friendslist )"
+				1="image( x1-30, y0+20, x0, y0, graphics/icon_friendslist )"
+			}
+		}
+		view_friends:Hover
+		{
+			textcolor="white"
+			render_bg {
+				1="image( x0-12, y0, x1, y1, graphics/glow_friendslist )"
+				2="image( x1-30, y0+20, x1, y1, graphics/icon_friendslist_over )"
+			}
+		}
+		view_friends:disabled {
+			textcolor="TextDisabled"
+		}
+
+
 		"COverlaySettingsDialog Page" {
 			inset-left=6
 			inset-top=30
