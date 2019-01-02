@@ -12,7 +12,9 @@
 			textcolor=A2TextNotification //slider color
 		}
 
-		VolumeSlider:focus { textcolor=A2TextNotification //slider color }
+		VolumeSlider:focus {
+			textcolor=A2TextNotification //slider color
+		}
 	}
 
 	layout {

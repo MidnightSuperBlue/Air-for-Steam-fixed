@@ -24,7 +24,7 @@
 		region { name=details x=275 width=max height=max overflow=scroll-vertical }
 			place { control=gametitleheader region=details y=180 dir=down align=left-center margin-left=20 margin-right=40 }
 			place { control=gamesubheader region=details height=120 width=1024 start=gametitleheader dir=down align=left-center margin-left=-5 }
-			place { control=compatsubheader region=details start=gamesubheader dir=down align=top-center }
+			place { control=compatsubheader region=details start=gamesubheader dir=down align=top-center height=60}
 
 			place { control=emptylisttext region=details width=max height=max margin=16 }
 
