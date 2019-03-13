@@ -1,0 +1,20 @@
+"Resource/colors/nord.styles" {
+
+	colors {
+		Focus="67 76 94 255"
+			//material 500
+
+		Focus2="76 86 106 255"
+			//lighter hue (material 300)
+
+		Focus3="59 66 82 255"
+			//darker hue (material 600)
+
+		Focus4="59 66 82 150"
+			//Focus3 transparent for details box
+
+		A2TextFocus="94 129 172 255"
+
+		A2TextFocusHover="129 161 193 255"
+	}
+}

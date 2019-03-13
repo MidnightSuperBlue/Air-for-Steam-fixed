@@ -35,17 +35,25 @@
 				control=welcomedetails,turnnotifications,nonsteamdetails,achievementsdetails,friendsdetails,dlcdetails,clouddetails,communityfilesdetails,newsdetails,screenshotsdetails
 				region=details
 				y=499
+				y=510 [$LINUX]
 				dir=down
 				width=max
 			}
 
-		region { name=links y=360 region=details width=max height=139 }
-			place { control=tagslabel region=links height=139 width=max }
+		region {
+			name=links
+			y=360
+			region=details
+			width=max
+			height=139
+			height=150 [$LINUX]
+		}
+			place { control=tagslabel region=links height=max width=max }
 
-		region { name=linksleft region=links width=215 height=124 align=left }
+		region { name=linksleft region=links width=215 height=max align=left margin-bottom=15 }
 			place { control=gamehublink,forumlink,ogglink,guideslink,recommendlink region=linksleft dir=down align=left y=17 x=20 spacing=6 }
 
-		region { name=linkscenter region=links width=160 height=124 align=top-center }
+		region { name=linkscenter region=links width=160 height=max align=top-center margin-bottom=15 }
 			place {
 				control=storelink,sendguestpasslink,manuallink,dlclink,cdkeylink,supportlink,editconfiglink
 				region=linkscenter
@@ -55,7 +63,7 @@
 				spacing=6
 			}
 
-		region { name=linksright region=links width=215 height=124 align=right }
+		region { name=linksright region=links width=215 height=max align=right margin-bottom=15 }
 			place { control=edittagslink,*taglink region=linksright dir=down align=left y=17 spacing=6 }
 
 		place { control=linkslabel,guidelink,newslink,achievementslink width=0 height=0 }
