@@ -140,6 +140,11 @@
 		}
 
 		place {
+			control=NewLibraryPage
+			width=max height=max start=phonereminderbar dir=down
+		}
+
+		place {
 			control=BroadcastPageMin
 			width=300
 			height=168

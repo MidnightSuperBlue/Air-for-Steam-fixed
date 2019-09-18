@@ -7,7 +7,7 @@
 
 		ClientTitle:FrameFocus { textcolor=none }
 
-		view_friends { 
+		view_friends {
 	      ControlName=Button
 	      labelText="#Steam_ViewFriends"
 	      command="ViewFriends"

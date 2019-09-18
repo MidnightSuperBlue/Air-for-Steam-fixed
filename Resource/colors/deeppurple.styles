@@ -12,10 +12,10 @@
 		Focus4="87 49 163 150"
 			//Focus3 transparent for details box
 
-		A2TextFocus="151 101 252 255"
-			//+30% brightness focus, -%10 saturation
+		A2TextFocus="128 72 240 255"
+			//+25% brightness focus
 
-		A2TextFocusHover="182 140 255 255"
-			//+30% brightness focus2, -10% saturation
+		A2TextFocusHover="166 115 255 255"
+			//+25% brightness focus2
 	}
 }

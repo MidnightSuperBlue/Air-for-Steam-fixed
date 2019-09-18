@@ -11,7 +11,7 @@ steam/cached/SettingsSubInterface.res {
 		place { control=SkinCombo dir=down width=max start=Label3 y=5 }
 
 		place [$WINDOWS] {
-			control=DPIScalingCheck,AutoLaunchCheck,BigPictureModeCheck,UrlBarCheck,GPUWebViewCheck,DWriteCheck,H264HWAccelCheck
+			control=DPIScalingCheck,AutoLaunchCheck,BigPictureModeCheck,UrlBarCheck,SmoothScrollWebViewCheck,GPUWebViewCheck,DWriteCheck,H264HWAccelCheck
 			dir=down start=SkinCombo y=20
 		}
 

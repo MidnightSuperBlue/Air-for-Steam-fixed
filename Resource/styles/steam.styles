@@ -108,8 +108,9 @@ steam.styles {
 			inset-top=30
 		}
 
+		//doesn't work as expected anymore
 		"GameItem_Uninstalled GamesGridImage" {
-			alpha		120
+			//alpha		120
 		}
 
 		Button {
