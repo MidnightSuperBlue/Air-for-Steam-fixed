@@ -1,33 +1,116 @@
-"Resource/layout/subpaneloptionsingame.layout" {
-
-	layout {
-		place {
-			control=EnableOverlayCheck,EnableSCTenFootOverlayCheck,EnableVRDesktopGameTheaterCheck
-			dir=down width=max margin-top=-4
+"resource/layout/subpaneloptionsingame.layout"
+{
+	controls
+	{
+		TitleLabel { controlname=label labeltext="#Steam_SettingsInGameTitle" style=highlight }
+		EnableOverlayCheck {	ControlName=CheckButton labelText="#Overlay_SettingsEnable" }
+		EnableSCTenfootOverlayCheck {	ControlName=CheckButton labelText="#Overlay_SettingsSCTenfootEnable" }
+		EnableVRDesktopGameTheaterCheck {	ControlName=CheckButton labelText="#Overlay_SettingsEnableVRDesktopGameTheaterCheck" }	
+		HotKeySelector {	ControlName=HotKeyEntry	}
+		ScreenshotHotKeySelector { ControlName=HotKeyEntry }
+		DescriptionLabel	{ ControlName=Label labeltext="#Overlay_SettingsDescription" wrap=1  }
+		HotKeySelectorLabel {	ControlName=Label labelText="#Overlay_SettingsHotKeyLabel" }
+		ScreenshotLabel {	ControlName=Label labelText="#Overlay_SettingsScreenshotHotKeyLabel"	}
+		ScreenshotActionLabel 	{	ControlName=Label	labelText="#Overlay_SettingsScreenshotActionLabel" }
+		ScreenshotNotifyCheck { ControlName=CheckButton labelText="#Friends_DisplayNotification" style=checkbox }
+		ScreenshotPlaySoundCheck { ControlName=CheckButton labelText="#Friends_PlayASound" }
+		ScreenshotSaveUncompressedCheck { ControlName=CheckButton labelText="#Overlay_SaveUncompressed" }
+	
+		SetScreenshotFolderButton { ControlName=Button labelText="#Steam_SettingsInGameScreenshotFolder" 	command=SetScreenshotFolder }
+						
+		ShowIngameFPSLabel { ControlName=Label labelText="#Steam_Settings_Ingame_ShowFPS_Title" }
+		ShowIngameFPSCornerCombo { ControlName="ComboBox" fieldName="ShowIngameFPSCombo" editable="0" }
+		ShowIngameFPSContrastCheck { ControlName=CheckButton labelText="#Steam_Settings_Ingame_ShowFPS_HightContrast" style=checkbox }
+	
+		Divider1 { ControlName=Divider	}
+		PingRateLabel {	controlname=label	labeltext=#Steam_ServerBrowserPingRateLabel wrap=1 style=highlight		}
+		PingRateInfo {	controlname=label	labeltext=#Steam_ServerBrowserPingRateInfo wrap=1		}		
+		PingRateCombo
+		{
+			controlname=combobox
+      			editable="0"
+		}	
+		TextFilterLabel { controlname=label labeltext="#Steam_TextFilterSettingLabel" wrap=1 style=highlight }
+		TextFilterStatus { controlname=label wrap=1 }
+		TextFilterUpdateSettingURL { controlname=urllabel labeltext="#Steam_TextFilterSettingURL" URLText="steam://url/TextFilterSettings" wrap=1 style=highlight }
+		Divider2 { ControlName=Divider	}
+		
+		ShareIPNetworkingLabel { ControlName=label labelText=#Steam_Settings_ShareIPNetworking_Label wrap=1 style=highlight }
+		ShareIPNetworkingInfo { ControlName=label labelText=#Steam_Settings_ShareIPNetworking_Info wrap=1 }
+		ShareIPNetworkingURL { ControlName=urllabel labelText=#Steam_Settings_ShareIPNetworking_URL URLText="#Steam_Settings_ShareIPNetworking_URLText" wrap=1 }
+		ShareIPNetworkingCombo { ControlName=combobox fieldName=ShareIPNetworkingCombo editable="0" }
+		
+	}
+	
+	colors
+	{
+	}	
+	
+	styles
+	{
+		highlight
+		{
+			textcolor=Text
+		}	
+		
+		checkbox
+		{
+			padding-top=0
+			padding-bottom=0
 		}
+	}
+	
+	layout
+	{
+		region { name=box margin-top=10 margin-bottom=20 margin-left=20 margin-right=20 width=max height=max }
+		region { name=top region=box margin-top=10 }
+		region { name=topleft region=top y=100 width=255 margin-right=20 }
+		region { name=topright region=top x=263 width=235 y=101}
+		
+		region { name=bottom region=box y=320 }
+		region { name=bottomleft region=bottom width=255 margin-right=20 }
+		region { name=bottomright region=bottom x=263 width=255 }
+		
+		place { controls=TitleLabel region=top }
+		place { controls=DescriptionLabel width=max region=top start=TitleLabel dir=down margin-top=8 }
 
-		place { control=PingRateLabel					dir=down width=max start=EnableVRDesktopGameTheaterCheck y=15 }
-		place { control=PingRateCombo					dir=down width=max start=PingRateLabel y=5 }
+		place { controls=EnableOverlayCheck region=top start=DescriptionLabel dir=down height=20 margin-top=10 margin-left=-3 }
+		place { controls=EnableSCTenfootOverlayCheck region=top start=EnableOverlayCheck dir=down height=20 margin-left=-3 }
+		place { controls=EnableVRDesktopGameTheaterCheck region=top start=EnableSCTenfootOverlayCheck dir=down height=20 margin-left=-3 }
 
-		place { control=ShowIngameFPSLabel				dir=down start=PingRateCombo y=20 }
-		place { control=ShowIngameFPSCombo				dir=down width=max start=ShowIngameFPSLabel y=5 }
+		place { controls=HotKeySelectorLabel,HotKeySelector dir=down spacing=5 width=max region=topleft start=EnableVRDesktopGameTheaterCheck margin-top=20 }
+		
+		place { controls=ShowIngameFPSLabel,ShowIngameFPSCombo,ShowIngameFPSContrastCheck dir=down spacing=5 start=HotKeySelector margin-top=48 width=max region=topleft }
+		place { controls=ShowIngameFPSContrastCheck dir=down spacing=5 start=ShowIngameFPSCombo height=20 margin-left=-3 margin-top=9 region=topleft }
+			
+		place { controls=ScreenshotLabel region=topright start=HotKeySelectorLabel }
+		place { controls=ScreenshotHotKeySelector,SetScreenshotFolderButton 
+			dir=down 
+			start=ScreenshotLabel
+			margin-top=5
+			spacing=5
+			width=max
+			height=24
+			region=topright }
+		place { control=ScreenshotActionLabel region=topright start=SetScreenshotFolderButton dir=down margin-top=19 }
+		place { controls=ScreenshotNotifyCheck,ScreenshotPlaySoundCheck,ScreenshotSaveUncompressedCheck dir=down start=ScreenshotActionLabel
+			margin-top=6 margin-left=10 height=22 width=max region=topright }
+		
+		place { control=Divider1 region=bottom width=max margin-top=15 }
+		place { controls="TextFilterLabel" region=bottomleft start=Divider1 margin-top=10 width=max dir=down }
+		place { controls="TextFilterStatus" region=bottomleft start=TextFilterLabel margin-top=10 width=235 dir=down height=25 }
+		place { controls="TextFilterUpdateSettingURL" region=bottomleft start=TextFilterStatus margin-top=10 width=235 dir=down }
+		place { controls="PingRateLabel" region=bottomright start=Divider1 margin-top=10 width=max dir=down }
+		
+		place { controls="PingRateCombo" region=bottomright start=PingRateLabel margin-top=10 width=235 dir=down height=25 }
+		place { control=Divider2 region=bottom margin-top=150 width=max }
 
-		place { control=ShowIngameFPSContrastCheck		dir=down start=ShowIngameFPSCombo y=20 }
-
-		place { control=HotKeySelectorLabel				dir=down start=ShowIngameFPSContrastCheck y=30 }
-		place { control=HotKeySelector					dir=down width=max start=HotKeySelectorLabel y=5 }
-
-		place { control=ScreenshotLabel					dir=down start=HotKeySelector y=30 }
-		place { control=ScreenshotHotKeySelector		dir=down width=max start=ScreenshotLabel y=5 }
-
-		place { control=ScreenshotActionLabel			dir=down start=ScreenshotHotKeySelector y=30 }
-		place {
-			control=ScreenshotNotifyCheck,ScreenshotPlaySoundCheck,ScreenshotSaveUncompressedCheck
-			dir=down start=ScreenshotActionLabel y=5
-		}
-
-		place { control=SetScreenshotFolderButton		dir=down start=ScreenshotSaveUncompressedCheck y=10 }
-
-		place { control=Divider1,DescriptionLabel,TitleLabel,PingRateInfo height=0 width=0 }
+		place { controls="ShareIPNetworkingLabel" region=bottomleft start=Divider2 margin-top=15 width=235 dir=down }
+		place { controls="ShareIPNetworkingInfo" region=bottomleft start=ShareIPNetworkingLabel margin-top=5 width=235 dir=down }		
+		place { controls="ShareIPNetworkingURL" region=bottomleft start=ShareIPNetworkingInfo margin-top=5 width=235 dir=down }										   
+		place { controls="ShareIPNetworkingCombo" region=bottomright start=Divider2 margin-top=32 width=235 dir=down height=25}
+		
+		
+		place { controls="PingRateInfo" region=bottomright start=PingRateCombo margin-top=10 width=235 dir=down }
 	}
 }
