@@ -1,35 +1,121 @@
-"Resource/layout/subpaneloptionsdownloads.layout" {
-
-	layout {
-		place { control=RegionLabel dir=down }
-		place { control=DownloadRegionCombo dir=down width=max start=RegionLabel dir=down y=5 }
-
-		place { control=RestrictionsLabel dir=down start=DownloadRegionCombo y=20 }
-		place { control=ThrottleRates dir=down width=max start=RestrictionsLabel y=5 }
-
-		place {
-			control=AllowDownloadsDuringGameplayCheckbox,ThrottleDownloadsWhileStreamingCheckbox,DownloadRatesInBitsCheckbox,AutoUpdateTimeRestrictCheckbox
-			dir=down
-			start=ThrottleRates
-			y=20
+"resource/layout/subpaneloptionsdownloads.layout"
+{
+	controls
+	{
+		RegionLabel {	controlname=label	labeltext=#Steam_RegionLabel	style=highlight 	}
+		LibrariesLabel {	controlname=label	labeltext=#Steam_LibrariesLabel	style=highlight }
+		RestrictionsLabel {	controlname=label	labeltext=#Steam_DownloadRestrictionsLabel	style=highlight 	}
+		RegionInfoLabel {	controlname=label labeltext=#Steam_RegionInfo wrap=1		}
+		ManageInstalledappsLabel { controlname=label labeltext=#SteamUI_ContentMgr_ManageInstalledAppsInfo }
+		FlushDownloadConfigLabel { controlname=label labeltext=#SteamUI_ContentMgr_FlushDownloadConfigInfo tooltiptext=#SteamUI_ContentMgr_FlushDownloadConfigTip }
+				
+		ThrottleCheckbox { controlname=checkbutton  labeltext=#Steam_ThrottleRatesLabel }
+		ThrottleRateCurrent { controlname=label }
+		ThrottleRateEditLabel { controlname=label labeltext=#SteamUI_ThrottleEditLabel }
+		ThrottleRateEdit { controlname=textentry }
+		ThrottleRateEditSuffix { controlname=label }
+		ThrottleRateApply 
+		{ 
+			controlname=button 
+			labeltext = #SteamUI_ThrottleApplyChange
+			command=ChangeThrottleValue
 		}
 
-		place { control=AutoUpdateTimeRestrictStartLabel dir=down start=AutoUpdateTimeRestrictCheckbox y=10 }
-		place { control=AutoUpdateTimeRestrictStart dir=down width=205 start=AutoUpdateTimeRestrictStartLabel y=5 }
-
-		place { control=AutoUpdateTimeRestrictEndLabel dir=down x=225 start=AutoUpdateTimeRestrictCheckbox y=10 }
-		place { control=AutoUpdateTimeRestrictEnd dir=down width=205 start=AutoUpdateTimeRestrictEndLabel y=5 }
-
-		place { control=FlushDownloadConfigLabel dir=down start=AutoUpdateTimeRestrictStart y=30 }
-		place { control=FlushDownloadConfig dir=down start=FlushDownloadConfigLabel y=10 }
-
-		place { control=ManageInstalledappsLabel dir=down start=FlushDownloadConfig y=30 }
-		place { control=ManageInstalledApps dir=down start=ManageInstalledappsLabel y=10 }
-
-		place {
-			control=Divider1,Divider2,Divider3,RegionInfoLabel,LibrariesLabel,ThrottleRatesLabel,AllowDownloadsDuringGameplayInfo,ThrottleDownloadsWhileStreamingInfo
-			height=0
-			width=0
+		
+		DownloadRegionCombo
+		{
+			controlname=combobox
+			editable="0"
 		}
+		
+		ManageInstalledApps
+		{
+			controlname=button
+			labeltext = #SteamUI_ContentMgr_ManageInstalledApps
+			command=ManageInstalledApps
+		}
+		
+		FlushDownloadConfig
+		{
+			controlname=button
+			labeltext = #SteamUI_ContentMgr_FlushDownloadConfig
+			command=FlushContentConfig
+		}
+		
+		AutoUpdateTimeRestrictCheckbox { controlname=checkbutton labeltext=#Steam_AutoUpdateTimeRestrictionLabel }
+		AutoUpdateTimeRestrictStartLabel { controlname=label labeltext=#Steam_AutoUpdateTimeRestrictionStart style=padded }
+		AutoUpdateTimeRestrictEndLabel { controlname=label labeltext=#Steam_AutoUpdateTimeRestrictionEnd style=padded }
+		AutoUpdateTimeRestrictStart { controlname=combobox }
+		AutoUpdateTimeRestrictEnd { controlname=combobox }
+		AllowDownloadsDuringGameplayCheckbox { controlname=checkbutton labeltext=#Steam_AllowDownloadsDuringGameplay tooltiptext=#Steam_AllowDownloadsDuringGameplayDetails}
+		ThrottleDownloadsWhileStreamingCheckbox { controlname=checkbutton labeltext=#Steam_ThrottleDownloadsWhileStreaming tooltiptext=#Steam_ThrottleDownloadsWhileStreamingDetails }
+		DownloadRatesInBitsCheckbox { controlname=checkbutton labeltext=#Steam_DownloadRatesInBits }
+				
+		Divider1 { ControlName=Divider	}				
+		Divider2 { ControlName=Divider	}				
+		Divider3 { ControlName=Divider	}	
+		
+	}
+	
+	colors
+	{
+	}	
+	
+	styles
+	{
+		highlight
+		{
+			textcolor=Text
+		}	
+		
+		padded
+		{
+			padding-top=6
+		}
+	}
+	
+	layout
+	{
+		region { name=box margin-top=10 margin-bottom=20 margin-left=20 margin-right=20 width=max height=max }
+		
+		place { controls="LibrariesLabel" region=box margin-top=10 dir=down }
+		place { controls="ManageInstalledApps" region=box start=LibrariesLabel margin-top=10 width=235 height=25 dir=down }
+		place { controls="ManageInstalledappsLabel" region=box start=ManageInstalledApps margin-top=10 width=max dir=down }		
+		
+		place { controls="Divider1" region=box start=ManageInstalledappsLabel dir=down margin-top=15 width=max }
+		
+		place { controls="RegionLabel" region=box start=Divider1 dir=down margin-top=15 }
+		place { controls="DownloadRegionCombo" region=box start=RegionLabel margin-top=10 height=25 width=235 dir=down }
+		place { controls="RegionInfoLabel" region=box start=DownloadRegionCombo margin-top=10 width=max dir=down }
+	
+		place { controls="Divider2" region=box start=RegionInfoLabel dir=down width=max margin-top=15 }
+				
+		place { controls="RestrictionsLabel" region=box start=Divider2 dir=down margin-top=15 }
+		
+		place { controls="AutoUpdateTimeRestrictCheckbox" region=box start=RestrictionsLabel dir=down margin-top=4 }
+		place { controls="AutoUpdateTimeRestrictStartLabel" region=box start=AutoUpdateTimeRestrictCheckbox dir=down margin-top=4 }
+		place { controls="AutoUpdateTimeRestrictStart" region=box start=AutoUpdateTimeRestrictStartLabel dir=right margin-left=10 width=78 }
+		place { controls="AutoUpdateTimeRestrictEndLabel" region=box start=AutoUpdateTimeRestrictStart dir=right margin-left=20 }
+		place { controls="AutoUpdateTimeRestrictEnd" region=box start=AutoUpdateTimeRestrictEndLabel dir=right margin-left=10 width=78 }
+		
+		place { controls="ThrottleCheckbox" region=box start=RestrictionsLabel dir=down margin-top=4 margin-left=260 }
+		place { controls="ThrottleRateCurrent" region=box start=ThrottleCheckbox dir=down width=235 height=25 margin-top=4 }
+		place { controls="ThrottleRateEditLabel" region=box start=ThrottleRateCurrent dir=down width=175 height=25 }
+		place { controls="ThrottleRateEdit" region=box start=ThrottleRateEditLabel dir=down width=125 height=25 }
+		place { controls="ThrottleRateEditSuffix" region=box start=ThrottleRateEdit dir=right margin-left=4 margin-top=5 }
+		place { controls="ThrottleRateApply" region=box start=ThrottleRateEdit dir=down width=70 height=25 margin-top=4 }
+		
+		place { controls="AllowDownloadsDuringGameplayCheckbox" region=box start=AutoUpdateTimeRestrictStartLabel dir=down margin-top=10 }
+		place { controls="ThrottleDownloadsWhileStreamingCheckbox" region=box start=AllowDownloadsDuringGameplayCheckbox dir=down }
+		place { controls="DownloadRatesInBitsCheckbox" region=box start=ThrottleDownloadsWhileStreamingCheckbox dir=down }
+		
+		place { controls="Divider3" region=box start=DownloadRatesInBitsCheckbox dir=down width=max margin-top=10 }
+		
+		place { controls="FlushDownloadConfig" region=box start=Divider3 margin-top=15 width=235 height=25 dir=down }
+		place { controls="FlushDownloadConfigLabel" region=box start=FlushDownloadConfig margin-top=10 width=max dir=down }
+		
+		
+
+
 	}
 }
