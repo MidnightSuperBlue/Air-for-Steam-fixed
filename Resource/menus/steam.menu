@@ -2,8 +2,8 @@
 
 	Steam [$WINDOWS||$LINUX] {
 		text="#steam_menu_file"
-
-		ViewFriends					{ text="#steam_menu_view_friends"			shellcmd="steam://open/friends" }
+		Console 				{ text="Console"							shellcmd="steam://open/console" }
+		ViewFriends				{ text="#steam_menu_view_friends"			shellcmd="steam://open/friends" }
 		Online					{ text="#friends_online"					shellcmd="steam://friends/status/online"	checkable=1		autocheck=0 }
 		Away					{ text="#friends_away"						shellcmd="steam://friends/status/away"		checkable=1		autocheck=0 }
 		Invisible				{ text="#friends_invisible"					shellcmd="steam://friends/status/invisible"	checkable=1		autocheck=0 }
