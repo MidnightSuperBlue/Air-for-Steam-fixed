@@ -1,0 +1,130 @@
+"Resource/layout/steamrootdialog.layout" {
+
+	styles {
+		RootMenu { bgcolor=none }
+
+		ClientTitle { textcolor=none }
+
+		ClientTitle:FrameFocus { textcolor=none }
+
+		view_friends {
+	      ControlName=Button
+	      labelText="#Steam_ViewFriends"
+	      command="ViewFriends"
+	      style="view_friends"
+	      textAlignment=east
+    	}
+
+		support_alert {
+			padding-left=50
+			padding-right=50
+			padding-top=6
+			inset="-8 -3 8 0"
+			bgcolor=support_flag_red
+			render { }
+			render_bg { }
+		}
+
+		inbox_button {
+			textcolor=none
+			render_bg {
+				0="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox )"
+			}
+		}
+
+		inbox_button:hover {
+			textcolor=none
+			render_bg {
+				0="image( x0, y0, x1, y1, graphics/onfocus/active_circle )"
+				1="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox )"
+			}
+		}
+
+		inbox_button_active {
+			textcolor=none
+			render_bg {
+				0="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox_active_hover )"
+			}
+		}
+
+		inbox_button_active:hover {
+			render_bg {
+				0="image( x0, y0, x1, y1, graphics/onfocus/active_circle )"
+				1="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox_active )"
+			}
+		}
+
+		parental_lock_button {
+			image=graphics/none
+			render_bg {
+				0="image( x0 - 2, y0 - 5, x1, y1, graphics/onfocus/unlock)"
+			}
+		}
+
+		parental_lock_button:hover {
+			image=graphics/none
+			render_bg {
+				0="image( x0 - 2, y0 - 5, x1, y1, graphics/onfocus/unlock_hover)"
+			}
+		}
+
+		parental_lock_button:selected {
+			image=graphics/none
+			render_bg {
+				0="image( x0 - 2, y0 - 5, x1, y1, graphics/onfocus/lock)"
+			}
+		}
+
+		parental_lock_button:selected:hover {
+			image=graphics/none
+			render_bg {
+				0="image( x0 - 2, y0 - 5, x1, y1, graphics/onfocus/lock_hover)"
+			}
+		}
+
+		CSteamRootDialog
+		{
+			bgcolor=almostblack
+
+			render_bg
+			{
+				// top area and graphics
+				//1="fill( x0+240, y0, x1, y0+80, Root.Header)"
+				//2="fill( x0, y0+32, x0+240, y1, Root.LeftCol)"
+				//3="fill( x0+240, y1-48, x1, y1, Root.Header)"
+				//4="fill( x0+240, y0+80, x1, y1-48, almostblack)"
+				0="image_scale(x0,y0,x1,y1,graphics/bg)"
+			}
+		}
+	}
+
+	colors { support_flag_red "169 72 71 255" }
+
+	layout {
+		region { name=header height=50 width=max }
+			place [!$OSX] { control=frame_minimize,frame_maximize,frame_close height=22 width=22 y=13 align=right margin-right=20 }
+			place [$OSX] { control=frame_close,frame_minimize,frame_maximize height=22 width=22 y=13 align=left margin-left=20 }
+			place { control=frame_captiongrip margin=2 width=max height=50 }
+
+			place [!$OSX] { control=MenuBar align=top width=52 height=49 }
+
+			place { control=ParentalLockButton region=header align=right height=30 width=30 align=right }
+
+			place [!$OSX] { control=AccountButton region=header align=right y=7 height=41 width=36 margin-right=118 }
+			place [$OSX] { control=AccountButton region=header align=right y=7 height=41 width=36 margin-right=20 }
+			place { control=InboxButton region=header align=right y=7 height=50 width=36 margin-right=4 end-right=AccountButton }
+			place { control=UIStatusPanel region=header align=right y=7 height=50 width=36 margin-right=4 end-right=InboxButton }
+
+		place { control=UINavigatorPanel width=max height=max }
+
+		place {
+			control=online_friends,startvr,exitvr,SupportAlert,fullscreen,New,add_game,ImageLogo,BigPictureBG,FriendPanel,account_balance,account_balance_seperator,account_URL,universe_label
+			height=30
+			width=0
+			margin-left=-9999
+		}
+
+		//needs the margin-left to actually remove the announcement web panel from sight
+		place { control=AnnouncementButton height=0 width=0 margin-left=-9999 }
+	}
+}
